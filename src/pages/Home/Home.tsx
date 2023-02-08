@@ -1,5 +1,6 @@
-import IntroArticles from 'components/Articles/IntroArticles'
 import { Typography } from '@mui/material'
+import IntroArticles from 'components/Articles/IntroArticles'
+import MainArticles from 'components/Articles/MainArticles'
 
 type Props = {}
 const Home = (props: Props) => {
@@ -18,6 +19,7 @@ const Home = (props: Props) => {
         The Latest
       </Typography>
       <IntroArticles />
+      <MainArticles />
     </>
   )
 }
