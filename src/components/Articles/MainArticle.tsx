@@ -1,4 +1,5 @@
 import { Card, CardActionArea, CardMedia, CardContent } from '@mui/material'
+import './MainArticle.scss'
 
 type Props = {
   title: string
@@ -10,17 +11,29 @@ type Props = {
 const MainArticle = ({ title, description, category, image }: Props) => {
   return (
     <>
-      <article className="intro-article">
+      <article className="main-article">
         <Card className="card">
-          <CardActionArea>
-            <CardMedia component="img" width="100/%" src={image} />
-            <CardContent>
-              {/* <img src={image} alt="" /> */}
-              <h3>{title}</h3>
-              <p> {description}</p>
+          <CardMedia
+            component="img"
+            width="100/%"
+            src={image}
+            className="card-img"
+          />
+          <CardContent
+            className="card-content"
+            sx={{
+              padding: '0px',
+              '&:last-child': {
+                padding: '0px',
+              },
+            }}
+          >
+            <div className="card-content-inner">
               <p> {category}</p>
-            </CardContent>
-          </CardActionArea>
+              <h3 className="title">{title}</h3>
+              <p className="description"> {description}</p>
+            </div>
+          </CardContent>
         </Card>
       </article>
     </>

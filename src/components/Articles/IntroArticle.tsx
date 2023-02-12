@@ -12,7 +12,7 @@ const IntroArticle = (props: Props) => {
           <CardActionArea>
             <CardMedia
               component="img"
-              width="100/%"
+              width="100%"
               image={articleImage}
               // image="./assets/Melanie-Courbet-Table.jpg"
               alt="Melanie Courbet Table"

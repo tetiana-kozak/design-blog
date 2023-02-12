@@ -1,0 +1,27 @@
+.main-article {
+  .card {
+    display: flex;
+    .card-img {
+      width: 30%;
+    }
+    .card-content {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      .card-content-inner {
+        .title {
+          font-weight: 700;
+          font-size: 27px;
+          line-height: 34px;
+          margin-bottom: 15px;
+        }
+        .description {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

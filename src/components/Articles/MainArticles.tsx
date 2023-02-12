@@ -6,10 +6,10 @@ type Props = {}
 const MainArticles = (props: Props) => {
   return (
     <>
-      <section className="Main-articles">
+      <section className="main-articles">
         <Grid container spacing={6}>
           {articlesArray.map(({ title, description, category, image }) => (
-            <Grid item xs={12} sm={6} md={6}>
+            <Grid item xs={12} sm={12} md={12}>
               <MainArticle
                 title={title}
                 description={description}

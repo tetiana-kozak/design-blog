@@ -1,26 +1,14 @@
-import { Typography } from '@mui/material'
 import IntroArticles from 'components/Articles/IntroArticles'
 import MainArticles from 'components/Articles/MainArticles'
+import './Home.scss'
 
 type Props = {}
 const Home = (props: Props) => {
   return (
-    <>
-      <Typography
-        variant="h3"
-        component="h2"
-        align="center"
-        sx={{
-          fontWeight: 400,
-          fontSize: '24px',
-          marginBottom: '24px',
-        }}
-      >
-        The Latest
-      </Typography>
+    <div className='home-page'>
       <IntroArticles />
       <MainArticles />
-    </>
+    </div>
   )
 }
 export default Home
