@@ -1,4 +1,5 @@
 import { Card, CardActionArea, CardMedia, CardContent } from '@mui/material'
+import CategoryButton from 'components/Buttons/CategoryButton'
 import './MainArticle.scss'
 
 type Props = {
@@ -29,7 +30,7 @@ const MainArticle = ({ title, description, category, image }: Props) => {
             }}
           >
             <div className="card-content-inner">
-              <p> {category}</p>
+              <CategoryButton category={category} />
               <h3 className="title">{title}</h3>
               <p className="description"> {description}</p>
             </div>
