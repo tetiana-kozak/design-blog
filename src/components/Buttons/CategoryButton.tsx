@@ -5,6 +5,10 @@ type Props = {
 }
 
 const CategoryButton = ({ category }: Props) => {
-  return <a className="category-button">{category}</a>
+  return (
+    <a className="category-button" href="#">
+      {category}
+    </a>
+  )
 }
 export default CategoryButton

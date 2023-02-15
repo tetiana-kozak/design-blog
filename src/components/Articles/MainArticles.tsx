@@ -8,8 +8,8 @@ const MainArticles = (props: Props) => {
     <>
       <section className="main-articles">
         <Grid container spacing={6}>
-          {articlesArray.map(({ title, description, category, image }) => (
-            <Grid item xs={12} sm={12} md={12}>
+          {articlesArray.map(({ title, description, category, image, id }) => (
+            <Grid item xs={12} sm={12} md={12} key={id}>
               <MainArticle
                 title={title}
                 description={description}
