@@ -9,22 +9,126 @@ type Props = {}
 const SliderSection = (props: Props) => {
   return (
     <section className="gray-slider-section slider">
-      <SectionTitle />
+      <SectionTitle sectionTitle="Last Launches" />
 
       <Swiper
-        spaceBetween={50}
+        spaceBetween={16}
+        pagination={{
+          el: '.swiper-pagination',
+          type: 'bullets',
+        }}
         slidesPerView={3}
         loop={true}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 1</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 2</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 3</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 4</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 5</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a className="slider-slide" href="#">
+            <img
+              src="/images/Generative-Art-Collection.jpg"
+              alt=""
+              className="slider-img"
+            />
+            <div className="slider-details">
+              <a href="#">
+                <h5>Commercial 6</h5>
+              </a>
+              <h4>
+                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
+              </h4>
+            </div>
+          </a>
+        </SwiperSlide>
       </Swiper>
     </section>
   )

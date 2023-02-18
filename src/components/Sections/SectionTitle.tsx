@@ -1,12 +1,14 @@
 import './SectionTitle.scss'
 
-type Props = {}
+type Props = {
+  sectionTitle: string
+}
 
-const SectionTitle = (props: Props) => {
+const SectionTitle = ({ sectionTitle }: Props) => {
   return (
     <div className="section-title">
       <a href="#">
-        <h3>Last Launches</h3>
+        <h3>{sectionTitle}</h3>
       </a>
     </div>
   )
