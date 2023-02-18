@@ -1,3 +1,4 @@
+import SectionTitle from 'components/Sections/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/swiper.min.css'
@@ -8,6 +9,8 @@ type Props = {}
 const SliderSection = (props: Props) => {
   return (
     <section className="gray-slider-section slider">
+      <SectionTitle />
+
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
@@ -15,7 +18,7 @@ const SliderSection = (props: Props) => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide> Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
