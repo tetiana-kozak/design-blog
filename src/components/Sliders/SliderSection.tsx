@@ -1,13 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/swiper.min.css'
-import './SliderMainPage.scss'
+import './SliderSection.scss'
 
 type Props = {}
 
-const SliderMainPage = (props: Props) => {
+const SliderSection = (props: Props) => {
   return (
-    <div className="slider">
+    <section className="gray-slider-section slider">
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
@@ -15,7 +15,7 @@ const SliderMainPage = (props: Props) => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide> Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
@@ -23,7 +23,7 @@ const SliderMainPage = (props: Props) => {
         <SwiperSlide>Slide 6</SwiperSlide>
         <SwiperSlide>Slide 7</SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   )
 }
-export default SliderMainPage
+export default SliderSection
