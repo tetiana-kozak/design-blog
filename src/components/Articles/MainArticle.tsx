@@ -31,7 +31,7 @@ const MainArticle = ({ title, description, category, image }: Props) => {
           >
             <div className="card-content-inner">
               <CategoryButton category={category} />
-              <h3 className="title">{title}</h3>
+              <h2 className="title">{title}</h2>
               <p className="description"> {description}</p>
             </div>
           </CardContent>
