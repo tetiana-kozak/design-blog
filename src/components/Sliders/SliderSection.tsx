@@ -20,8 +20,8 @@ const SliderSection = (props: Props) => {
         modules={[Pagination]}
         spaceBetween={16}
         slidesPerView={3}
-        centeredSlides={true}
-        loop={true}
+        // centeredSlides={true}
+        // loop={true}
       >
         <SwiperSlide>
           <a className="slider-slide" href="#">
