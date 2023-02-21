@@ -1,7 +1,9 @@
 import SectionTitle from 'components/Sections/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper'
 
 import 'swiper/swiper.min.css'
+import 'swiper/css/pagination'
 import './SliderSection.scss'
 
 type Props = {}
@@ -12,15 +14,14 @@ const SliderSection = (props: Props) => {
       <SectionTitle sectionTitle="Last Launches" />
 
       <Swiper
-        spaceBetween={16}
         pagination={{
-          el: '.swiper-pagination',
-          type: 'bullets',
+          clickable: true,
         }}
+        modules={[Pagination]}
+        spaceBetween={16}
         slidesPerView={3}
+        centeredSlides={true}
         loop={true}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <a className="slider-slide" href="#">
