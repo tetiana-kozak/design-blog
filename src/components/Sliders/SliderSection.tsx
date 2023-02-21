@@ -7,13 +7,18 @@ import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
 import './SliderSection.scss'
 
-type Props = {}
+type Props = {
+  categoryArray: {
+    title: string
+    description: string
+    category: string
+    image: string
+    id: number
+    heading?: string
+  }[]
+}
 
-const SliderSection = (props: Props) => {
-  const lastLaunchesArray = articlesArray.filter(
-    (article) => article.heading === 'last-launches'
-  )
-
+const SliderSection = ({ categoryArray }: Props) => {
   return (
     <section className="gray-slider-section slider">
       <SectionTitle sectionTitle="Last Launches" />
@@ -28,7 +33,7 @@ const SliderSection = (props: Props) => {
         // centeredSlides={true}
         // loop={true}
       >
-        {lastLaunchesArray.map(({ title, category, image, id }) => (
+        {categoryArray.map(({ title, category, image, id }) => (
           <SwiperSlide key={id}>
             <a className="slider-slide" href="#">
               <img src={image} alt="" className="slider-img" />
