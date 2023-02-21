@@ -4,6 +4,7 @@ type Articles = {
   category: string
   image: string
   id: number
+  heading?: string
 }
 
 const ArticlesArray: Articles[] = [
@@ -73,6 +74,7 @@ const ArticlesArray: Articles[] = [
     description:
       'Hotel Riomar is a boutique hotel in Ibiza that embraces its mid-century layered interiors by celebrating the nostalgic qualities of its past.',
     category: 'travel',
+    heading: 'last-launches',
     image: '/images/hotel-riomar.jpg',
   },
   {
@@ -82,6 +84,7 @@ const ArticlesArray: Articles[] = [
     description:
       'KEMA studio transformed the unlivable MARVILA ATTIC into a bright and airy apartment with a hidden kitchen and built-in wall sofa.',
     category: 'architecture',
+    heading: 'last-launches',
     image: '/images/The-Home-Lamp.jpg',
   },
   {
@@ -90,6 +93,7 @@ const ArticlesArray: Articles[] = [
     description:
       "Design Milk's founder Jaime Derringer collaborates with Eskayel on a new mural wallpaper + fabric collection – download one for your desktop wallpaper!",
     category: 'art',
+    heading: 'last-launches',
     image: '/images/February-2023-Desktop-Wallpaper.jpg',
   },
   {
@@ -98,6 +102,7 @@ const ArticlesArray: Articles[] = [
     description:
       "The Rubbish special edition of their iconic pedal bin design is made from plastic leftovers and sawdust from Vipp's own production waste.",
     category: 'home furnishing',
+    heading: 'last-launches',
     image: '/images/Rubbish-Waste-Bin-Recycled.jpg',
   },
 ]

@@ -1,6 +1,7 @@
 import SectionTitle from 'components/Sections/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
+import articlesArray from 'utils/articlesArray'
 
 import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
@@ -9,6 +10,10 @@ import './SliderSection.scss'
 type Props = {}
 
 const SliderSection = (props: Props) => {
+  const lastLaunchesArray = articlesArray.filter(
+    (article) => article.heading === 'last-launches'
+  )
+
   return (
     <section className="gray-slider-section slider">
       <SectionTitle sectionTitle="Last Launches" />
@@ -23,113 +28,19 @@ const SliderSection = (props: Props) => {
         // centeredSlides={true}
         // loop={true}
       >
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 1</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 2</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 3</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 4</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 5</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <a className="slider-slide" href="#">
-            <img
-              src="/images/Generative-Art-Collection.jpg"
-              alt=""
-              className="slider-img"
-            />
-            <div className="slider-details">
-              <a href="#">
-                <h5>Commercial 6</h5>
-              </a>
-              <h4>
-                Vigor + Luminosity Embody Armadillo’s New Sistine Rug Collection
-              </h4>
-            </div>
-          </a>
-        </SwiperSlide>
+        {lastLaunchesArray.map(({ title, category, image, id }) => (
+          <SwiperSlide key={id}>
+            <a className="slider-slide" href="#">
+              <img src={image} alt="" className="slider-img" />
+              <div className="slider-details">
+                <a href="#">
+                  <h5>{category}</h5>
+                </a>
+                <h4>{title}</h4>
+              </div>
+            </a>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   )
