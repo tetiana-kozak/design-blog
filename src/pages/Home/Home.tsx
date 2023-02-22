@@ -17,17 +17,19 @@ const Home = (props: Props) => {
   )
   const regularArray = articlesArray.filter((article) => article.heading === '')
 
-  console.log('featuredArray', featuredArray)
+  console.log('regularArray', regularArray)
 
   return (
     <div className="home-page">
       <FeaturedArticles categoryArray={featuredArray} />
-      <MainArticles categoryArray={regularArray} />
+      <MainArticles categoryArray={regularArray.slice(0, 4)} />
       <SliderSection
         categoryArray={lastLaunchesArray}
         sectionTitle="Last Launches"
       />
+      <MainArticles categoryArray={regularArray.slice(4, 8)} />
       <SliderSection categoryArray={popularArray} sectionTitle="Popular" />
+      <MainArticles categoryArray={regularArray.slice(8)} />
     </div>
   )
 }
