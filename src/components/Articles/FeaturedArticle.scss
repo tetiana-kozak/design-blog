@@ -1,3 +1,9 @@
+.intro-article {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .card {
   border: none;
   border-radius: 0;
@@ -6,9 +12,42 @@
   color: #000;
 
   &:hover {
+    color: #585858;
+  }
+  .card-img {
+    width: 100%;
   }
 }
 
 .css-1v2exvi-MuiCardActionArea-focusHighlight {
   background: none;
+}
+
+.card-content {
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card-relative {
+  position: relative;
+}
+
+.button-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  bottom: -14px;
 }

@@ -14,7 +14,6 @@ type Props = {
     category: string
     image: string
     id: number
-    heading?: string
   }[]
 }
 

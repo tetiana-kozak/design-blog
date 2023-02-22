@@ -9,9 +9,15 @@ const Home = (props: Props) => {
   const lastLaunchesArray = articlesArray.filter(
     (article) => article.heading === 'last-launches'
   )
+  const featuredArray = articlesArray.filter(
+    (article) => article.heading === 'featured'
+  )
+
+  console.log('featuredArray', featuredArray)
+
   return (
     <div className="home-page">
-      <FeaturedArticles />
+      <FeaturedArticles categoryArray={featuredArray} />
       <MainArticles />
       <SliderSection categoryArray={lastLaunchesArray} />
     </div>

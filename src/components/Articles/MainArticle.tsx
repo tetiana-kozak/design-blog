@@ -16,7 +16,7 @@ const MainArticle = ({ title, description, category, image }: Props) => {
         <Card className="card">
           <CardMedia
             component="img"
-            width="100/%"
+            width="100%"
             src={image}
             className="card-img"
           />

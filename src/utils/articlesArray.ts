@@ -33,7 +33,7 @@ const ArticlesArray: Articles[] = [
     description:
       'Working with the theme of "Colour Vibes," color phenom Tekla Evelina Severin transforms empty space into surreal, color-blocked exhibition.',
     category: 'interrior design',
-    heading: 'featured-main',
+    heading: 'featured',
     image: '/images/Dimensions-of-Colour-Formex.jpg',
   },
   {
