@@ -121,7 +121,7 @@ const ArticlesArray: Articles[] = [
     description:
       'Hotel Riomar is a boutique hotel in Ibiza that embraces its mid-century layered interiors by celebrating the nostalgic qualities of its past.',
     category: 'travel',
-    heading: 'last-launches',
+    heading: 'last launches',
     image: '/images/hotel-riomar.jpg',
   },
   {
@@ -131,7 +131,7 @@ const ArticlesArray: Articles[] = [
     description:
       'KEMA studio transformed the unlivable MARVILA ATTIC into a bright and airy apartment with a hidden kitchen and built-in wall sofa.',
     category: 'architecture',
-    heading: 'last-launches',
+    heading: 'last launches',
     image: '/images/The-Home-Lamp.jpg',
   },
   {
@@ -140,7 +140,7 @@ const ArticlesArray: Articles[] = [
     description:
       "Design Milk's founder Jaime Derringer collaborates with Eskayel on a new mural wallpaper + fabric collection – download one for your desktop wallpaper!",
     category: 'art',
-    heading: 'last-launches',
+    heading: 'last launches',
     image: '/images/February-2023-Desktop-Wallpaper.jpg',
   },
   {
@@ -149,8 +149,66 @@ const ArticlesArray: Articles[] = [
     description:
       "The Rubbish special edition of their iconic pedal bin design is made from plastic leftovers and sawdust from Vipp's own production waste.",
     category: 'home furnishing',
-    heading: 'last-launches',
+    heading: 'last launches',
     image: '/images/Rubbish-Waste-Bin-Recycled.jpg',
+  },
+
+  {
+    id: 11,
+    title:
+      'F5: Paper Artist Zoe Bradley Shares a Go-To Pen, Favorite Liqueur + More',
+    description:
+      'In this Friday Five, Wales-based paper artist Zoe Bradley shares an inspiring collaboration, go-to pen, a new favorite liqueur, and more.',
+    category: 'art',
+    heading: 'last launches',
+    image: '/images/F5-Zoe-Bradley.jpg',
+  },
+  {
+    id: 11,
+    title: 'The Oru Collection Brings the Rounded Furniture Trend To Contract',
+    description:
+      "The influence of the 1970s + Japanese design create a feeling that's bold + iconic in the Oru collection for contract from Patricia Urquiola for Andreu World.",
+    category: 'commercial',
+    heading: 'popular',
+    image: '/images/Andreu-World-Oru-Collection.jpg',
+  },
+  {
+    id: 11,
+    title:
+      'Wire Grids Visually Break up the Open Layout of This Flatiron Office',
+    description:
+      'Office of Tangible Space created a bright, airy, and inviting new interior with custom solutions for the new ScienceIO headquarters.',
+    category: 'commercial',
+    heading: 'popular',
+    image: '/images/Office-of-Tangible-Space.jpg',
+  },
+  {
+    id: 11,
+    title: "A 1940s Pink Villa Becomes New Home for Luca Nichetto's Studio",
+    description:
+      "Luca Nichetto renovated a 40s pink villa to become his Stockholm studio that's curious pink outside with an interior that draws you in.",
+    category: 'interrior design',
+    heading: 'popular',
+    image: '/images/Pink-Villa-Design-Studio.jpg',
+  },
+  {
+    id: 11,
+    title: 'Smile Plastics Turns Yogurt Pots Into Terrazzo-Like Surface Panels',
+    description:
+      'Smile Plastics designs and manufactures hand-crafted, supersized terrazzo-like panels for retail, architecture, interiors, and product design – from waste.',
+    category: 'home furnishing',
+    heading: 'popular',
+    image: '/images/GAN_LONDON-STORE.jpg',
+  },
+  {
+    id: 11,
+    title:
+      'Why Sustainability Will Be the Single Topic at Design China Beijing 2022',
+    description:
+      "This year's event, also known as Sustainable Design China Summit, will cover the world of design through a sustainability lens.",
+    category: 'architecture',
+    heading: 'popular',
+    image: '/images/design-china-beijing.jpg',
   },
 ]
 
