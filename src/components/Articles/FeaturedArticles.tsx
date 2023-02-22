@@ -1,26 +1,26 @@
 import { Grid } from '@mui/material'
-import IntroArticle from './IntroArticle'
+import FeaturedArticle from './FeaturedArticle'
 
 type Props = {}
-const IntroArticles = (props: Props) => {
+const FeaturedArticles = (props: Props) => {
   return (
     <>
       <section className="intro-articles">
         <Grid container spacing={6}>
           <Grid item xs={12} sm={6} md={3}>
-            <IntroArticle />
-            <IntroArticle />
+            <FeaturedArticle />
+            <FeaturedArticle />
           </Grid>
           <Grid item xs={12} sm={6} md={6}>
-            <IntroArticle />
+            <FeaturedArticle />
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <IntroArticle />
-            <IntroArticle />
+            <FeaturedArticle />
+            <FeaturedArticle />
           </Grid>
         </Grid>
       </section>
     </>
   )
 }
-export default IntroArticles
+export default FeaturedArticles

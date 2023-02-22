@@ -1,4 +1,4 @@
-import IntroArticles from 'components/Articles/IntroArticles'
+import FeaturedArticles from 'components/Articles/FeaturedArticles'
 import MainArticles from 'components/Articles/MainArticles'
 import SliderSection from 'components/Sliders/SliderSection'
 import articlesArray from 'utils/articlesArray'
@@ -11,7 +11,7 @@ const Home = (props: Props) => {
   )
   return (
     <div className="home-page">
-      <IntroArticles />
+      <FeaturedArticles />
       <MainArticles />
       <SliderSection categoryArray={lastLaunchesArray} />
     </div>

@@ -1,10 +1,10 @@
 import { Card, CardActionArea, CardMedia, CardContent } from '@mui/material'
-import './IntroArticle.scss'
+import './FeaturedArticle.scss'
 
 import articleImage from 'assets/Melanie-Courbet-Table.jpg'
 
 type Props = {}
-const IntroArticle = (props: Props) => {
+const FeaturedArticle = (props: Props) => {
   return (
     <>
       <article className="intro-article">
@@ -27,4 +27,4 @@ const IntroArticle = (props: Props) => {
     </>
   )
 }
-export default IntroArticle
+export default FeaturedArticle
