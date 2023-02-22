@@ -9,6 +9,53 @@ type Articles = {
 
 const ArticlesArray: Articles[] = [
   {
+    id: 0,
+    title: 'Wooden Sculptures Carved From Storm-Battered Trees',
+    description:
+      'These monolithic sculptures carved and shaped by artist Vince Skelly are made from single logs recovered from a windstorm.',
+    category: 'art',
+    heading: 'featured',
+    image: 'vince-skelly-a-conversation.jpg',
+  },
+  {
+    id: 0,
+    title: 'Take Control of the Mood With the Nivél Pendant',
+    description:
+      "The Nivél Pendant's flat panel LED light pivots on an axis to focus light downward or as a soft wall wash, giving you the control to set the mood.",
+    category: 'home furnishing',
+    heading: 'featured',
+    image: 'Pablo-Designs-Nivel-Pendant.jpg',
+  },
+  {
+    id: 0,
+    title:
+      'Tekla Evelina Severin Drops Color-Blocking "Colour Vibes" at FORMEX',
+    description:
+      'Working with the theme of "Colour Vibes," color phenom Tekla Evelina Severin transforms empty space into surreal, color-blocked exhibition.',
+    category: 'interrior design',
+    heading: 'featured-main',
+    image: 'Dimensions-of-Colour-Formex.jpg',
+  },
+  {
+    id: 0,
+    title: 'Listen to the KBIS 2023 DMM Talks Lounge Panels Online',
+    description:
+      'Listen to all of the panel conversations that happened in the DMM Talks Lounge at KBIS 2023 on the KBIS website now.',
+    category: 'featured',
+    heading: 'featured',
+    image: 'KBIS-2023-DMM-Talks-Lounge.jpg',
+  },
+  {
+    id: 0,
+    title: "Charles Gaines' Colorful Pixelation of Southern Trees",
+    description:
+      "Conceptual artist Charles Gaines presents new colorful pixelated abstractions of 'Southern Trees' in New York. Step back to see how they connect.",
+    category: 'art',
+    heading: 'featured',
+    image: 'Charles-Gaines-Southern-Trees.jpg',
+  },
+
+  {
     id: 1,
     title:
       'You Can Now Customize Samsung Bespoke Refrigerators With Any Image (*For a Price)',
