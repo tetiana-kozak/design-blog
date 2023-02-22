@@ -15,12 +15,13 @@ type Props = {
     image: string
     id: number
   }[]
+  sectionTitle: string
 }
 
-const SliderSection = ({ categoryArray }: Props) => {
+const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
   return (
     <section className="gray-slider-section slider">
-      <SectionTitle sectionTitle="Last Launches" />
+      <SectionTitle sectionTitle={sectionTitle} />
 
       <Swiper
         pagination={{

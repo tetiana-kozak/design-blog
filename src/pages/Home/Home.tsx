@@ -19,7 +19,10 @@ const Home = (props: Props) => {
     <div className="home-page">
       <FeaturedArticles categoryArray={featuredArray} />
       <MainArticles />
-      <SliderSection categoryArray={lastLaunchesArray} />
+      <SliderSection
+        categoryArray={lastLaunchesArray}
+        sectionTitle="Last Launches"
+      />
     </div>
   )
 }
