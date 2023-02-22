@@ -21,7 +21,7 @@ const ArticlesArray: Articles[] = [
     id: 2,
     title: 'Take Control of the Mood With the Nivél Pendant',
     description:
-      "The Nivél Pendant's flat panel LED light pivots on an axis to focus light downward or as a soft wall wash, giving you the control to set the mood.",
+      "The Nivél Pendant's flat panel LED light pivots on an axis to focus light downward or as a soft wall wash.",
     category: 'home furnishing',
     heading: 'featured',
     image: '/images/Pablo-Designs-Nivel-Pendant.jpg',
@@ -40,7 +40,7 @@ const ArticlesArray: Articles[] = [
     id: 4,
     title: 'Listen to the KBIS 2023 DMM Talks Lounge Panels Online',
     description:
-      'Listen to all of the panel conversations that happened in the DMM Talks Lounge at KBIS 2023 on the KBIS website now.',
+      'Listen to all of the panel conversations that happened in the DMM Talks Lounge at KBIS 2023.',
     category: 'featured',
     heading: 'featured',
     image: '/images/KBIS-2023-DMM-Talks-Lounge.jpg',
@@ -49,7 +49,7 @@ const ArticlesArray: Articles[] = [
     id: 5,
     title: "Charles Gaines' Colorful Pixelation of Southern Trees",
     description:
-      "Conceptual artist Charles Gaines presents new colorful pixelated abstractions of 'Southern Trees' in New York. Step back to see how they connect.",
+      "Conceptual artist Charles Gaines presents new colorful pixelated abstractions of 'Southern Trees' in New York.",
     category: 'art',
     heading: 'featured',
     image: '/images/Charles-Gaines-Southern-Trees.jpg',
@@ -123,6 +123,25 @@ const ArticlesArray: Articles[] = [
     image: '/images/F5-Melanie-Courbet.jpg',
   },
   {
+    id: 4,
+    title:
+      'An Apartment on a Residential Yacht That Transforms From One Bedroom to Two',
+    description:
+      "Michael K. Chen Architecture designed a transforming Pied-å-Mer that serves as a couple's holiday retreat located aboard a residential yacht.",
+    category: 'architecture',
+    heading: '',
+    image: '/images/MKCA_Pied-a-Mer-Apartment.jpg',
+  },
+  {
+    id: 4,
+    title: 'Business of Design Week 2022 Drives Innovations Amid Uncertainty',
+    description:
+      "On the occasion of the summit's 20th anniversary, Business of Design Week 2022 will be a celebration with creative leaders under the theme 'Design for Change.'",
+    category: 'featured',
+    heading: '',
+    image: '/images/Business-of-Design-Week-2022-Nikki-Gonnissen.jpg',
+  },
+  {
     id: 5,
     title: 'Relevo Rug Sculpts a Welcoming Geometric Landscape Underfoot',
     description:
@@ -130,6 +149,15 @@ const ArticlesArray: Articles[] = [
     category: 'home furnishing',
     heading: '',
     image: '/images/Muuto-relevo.jpg',
+  },
+  {
+    id: 5,
+    title: "3form's 2023 Color Collection Nails Down Hard-to-Find Hues",
+    description:
+      "The 10 new pastel colors are inspired by the four seasons and will be permanently added to 3form's color system.",
+    category: 'commercial',
+    heading: '',
+    image: '/images/3form-2023-color-collection.jpg',
   },
   {
     id: 5,
