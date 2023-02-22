@@ -4,7 +4,7 @@ type Articles = {
   category: string
   image: string
   id: number
-  heading?: string
+  heading: string
 }
 
 const ArticlesArray: Articles[] = [
@@ -62,7 +62,17 @@ const ArticlesArray: Articles[] = [
     description:
       'Samsung has unlocked unlimited possibilities by allowing customers to upload any image, design, or photo to adorn their Bespoke fridges.',
     category: 'technology',
+    heading: '',
     image: '/images/Generative-Art-Collection.jpg',
+  },
+  {
+    id: 1,
+    title: 'A Modern Red House in Sweden Near the Arctic Circle',
+    description:
+      'Due to strict zoning rules, this angular house required a red roof which led to the designers wrapping the rest of the house in the same bold color.',
+    category: 'architecture',
+    heading: '',
+    image: '/images/Arctic-Circle-House-Sweden.jpg',
   },
   {
     id: 2,
@@ -71,7 +81,27 @@ const ArticlesArray: Articles[] = [
     description:
       "The Frank Lloyd Wright series for YAMAGIWA includes representations of a few of the legendary architect's original masterpieces in the form of lighting.",
     category: 'home furnishing',
+    heading: '',
     image: '/images/Frank-Lloyd-Wright-Lighting-Collection.jpeg',
+  },
+  {
+    id: 2,
+    title:
+      'The Shinola Hotel Is Built in Detroit by Locals Shinola and Bedrock',
+    description:
+      "Shinola Hotel is a boutique hotel in Detroit with a hyper-local design that's evident everywhere, from ceramic wall tiles to millwork made by local merchants.",
+    category: 'travel',
+    heading: '',
+    image: '/images/shinolahotel_shinola.jpg',
+  },
+  {
+    id: 2,
+    title: 'New Book Release: The Brutalists: Brutalism’s Best Architects',
+    description:
+      "Author Owen Hopkins highlights more than 250 Brutalist architects in the new release The Brutalists: Brutalism's Best Architects.",
+    category: 'architecture',
+    heading: '',
+    image: '/images/The-BrutalistsBrutalisms-Best-Architects-Owen-Hopkins.jpg',
   },
   {
     id: 3,
@@ -80,6 +110,7 @@ const ArticlesArray: Articles[] = [
     description:
       'Our Place hired Ringo Studio to create a store with visually delightful product displays and a color palette that matches their popular pans.',
     category: 'commercial',
+    heading: '',
     image: '/images/Our-Place-Melrose.jpg',
   },
   {
@@ -88,6 +119,7 @@ const ArticlesArray: Articles[] = [
     description:
       "Gallery founder + director Melanie Courbet shares a worthwhile organization in Sierra Leone, the place she just can't stop shopping + more in Friday Five.",
     category: 'art',
+    heading: '',
     image: '/images/F5-Melanie-Courbet.jpg',
   },
   {
@@ -96,7 +128,26 @@ const ArticlesArray: Articles[] = [
     description:
       "Light and shadow come to play across Milan-based Studiopepe's Relevo, a new hand-tufted, sculptural wool rug design for Muuto.",
     category: 'home furnishing',
+    heading: '',
     image: '/images/Muuto-relevo.jpg',
+  },
+  {
+    id: 5,
+    title: 'Two Levitating, Rammed Earth Villas in a Costa Rican Jungle',
+    description:
+      'In the Costa Rican jungle, a pair of jaw-dropping, minimalist villas with rammed earth walls awaits you on your next vacation.',
+    category: 'travel',
+    heading: '',
+    image: '/images/Achiote-Formafatal-Rammed.jpg',
+  },
+  {
+    id: 5,
+    title: 'A Melbourne House With 10 Folds in the Roof To Bring in Light',
+    description:
+      'A home in Melbourne with an Edwardian front facade is renovated and given a back extension complete with ten folds in its roof to bring in light.',
+    category: 'architecture',
+    heading: '',
+    image: '/images/10-Fold-House-Timmons.jpg',
   },
   {
     id: 6,
@@ -104,6 +155,7 @@ const ArticlesArray: Articles[] = [
     description:
       'For Maison+Objet\'s "British Capsule," Lee Broom includes a new collection of lighting, as well a selection of complementary furniture and decor.',
     category: 'home furnishing',
+    heading: '',
     image: '/images/Lee-Broom-MaisonObjet.jpg',
   },
   {
@@ -112,6 +164,7 @@ const ArticlesArray: Articles[] = [
     description:
       "The Design Milk X Modenus Talks Lounge is back at KBIS with a schedule that's jam-packed full of presentations + conversations covering design business, social media + trends.",
     category: 'featured',
+    heading: '',
     image: '/images/Marvila-Attic-Lisbon-KEMA.jpg',
   },
   {
