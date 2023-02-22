@@ -1,7 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="33.66" height="33.533" viewBox="0 0 33.66 33.533">
-  <g id="Group_25" data-name="Group 25" transform="translate(729.935 795.587) rotate(180)">
-    <path id="Path_30" data-name="Path 30" d="M706.609,796.168V772.227h23.941v-4.642H701.967v28.583Z" transform="translate(-1.115 -1.081)" fill="#040505"/>
-    <path id="Path_30_-_Outline" data-name="Path 30 - Outline" d="M707.109,796.668h-5.642V767.084h29.583v5.642H707.109Zm-4.642-1h3.642V771.727h23.941v-3.642H702.467Z" transform="translate(-1.115 -1.081)" fill="#1a1818"/>
-    <path id="Path_31" data-name="Path 31" d="M701.917,791.637h-5.642V762.054h29.583V767.7H701.917Zm-4.642-1h3.642V766.7h23.941v-3.642H697.275Z" transform="translate(0 0)" fill="#1a1818"/>
-  </g>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_597)">
+<path d="M21.1964 0.811861L21.1964 21.4384L0.569918 21.4384V25.4377L25.1958 25.4377L25.1958 0.811861H21.1964Z" fill="#040505"/>
+<path d="M20.7657 0.38105H25.6266L25.6266 25.8694L0.139147 25.8694V21.0085L20.7657 21.0085L20.7657 0.38105ZM24.765 1.24261H21.6272L21.6272 21.8692L1.0007 21.8692V25.0069L24.765 25.0069L24.765 1.24261Z" fill="#1A1818"/>
+<path d="M24.2783 3.78429H29.1392L29.1392 29.2717L3.65177 29.2717V24.4074L24.2783 24.4074L24.2783 3.78429ZM28.2776 4.64585H25.1398L25.1398 25.2689L4.51333 25.2689V28.4068L28.2776 28.4068L28.2776 4.64585Z" fill="#1A1818"/>
+</g>
+<defs>
+<clipPath id="clip0_1_597">
+<rect width="29" height="28.8906" fill="white" transform="translate(0.13916 0.381104)"/>
+</clipPath>
+</defs>
 </svg>
