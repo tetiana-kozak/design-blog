@@ -25,7 +25,7 @@ const Footer = (props: Props) => {
             <div className="subtitle">Modernize Your Life</div>
             <h6 className="title">Get in the Know</h6>
             <p className="description">
-              You’ll always hear it from Design Milk first. Our passion is
+              You’ll always hear it from In Design first. Our passion is
               discovering and highlighting emerging talent, and we’re energized
               by and for our community of like-minded design lovers — like you!
             </p>
@@ -42,8 +42,51 @@ const Footer = (props: Props) => {
               </button>
             </form>
           </Grid>
-          <Grid item xs={12} md={6}>
-            footer 2
+          <Grid item xs={12} md={6} className="footer-social">
+            <div className="menu">
+              <div className="title">About In Design</div>
+              <ul className="links">
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">Our Mission</a>
+                </li>
+                <li>
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div className="social-links">
+              <ul>
+                <li>
+                  <a href="#" className="facebook"></a>
+                </li>
+                <li>
+                  <a href="#" className="instagram"></a>
+                </li>
+                <li>
+                  <a href="#" className="you-tube"></a>
+                </li>
+                <li>
+                  <a href="#" className="pinterest"></a>
+                </li>
+                <li>
+                  <a href="#" className="twitter"></a>
+                </li>
+              </ul>
+            </div>
+            <div className="disclaimer">
+              <div className="copyright">
+                Photo copyright retained by photo owners, everything else © 2023
+                In Design®.
+              </div>
+              <div className="links">
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Container>

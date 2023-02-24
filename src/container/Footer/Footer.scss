@@ -49,12 +49,100 @@
       text-transform: uppercase;
       padding: 16px 46px;
       background: transparent;
-      border: 2px solid #ffffff;
+      border: 2px solid #fff;
       color: #fff;
       cursor: pointer;
       &:hover {
         background-color: #2f2f2f;
         transition: all ease-in-out 0.3s;
+      }
+    }
+  }
+}
+
+.footer-social {
+  a {
+    color: #e2e2e2;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .menu {
+    .title {
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .links {
+      margin-bottom: 30px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+        a {
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .social-links {
+    margin-bottom: 25px;
+    // height: 35px;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        a {
+          background-repeat: no-repeat;
+          // background-size: 35px;
+          height: 35px;
+          width: 35px;
+          display: block;
+
+          &.facebook {
+            background-image: url(./../../assets/facebook.svg);
+          }
+          &.instagram {
+            background-image: url(./../../assets/instagram.svg);
+          }
+          &.you-tube {
+            width: 43px;
+            background-image: url(./../../assets/you-tube.svg);
+          }
+          &.pinterest {
+            background-image: url(./../../assets/pinterest.svg);
+          }
+          &.twitter {
+            background-image: url(./../../assets/twitter.svg);
+          }
+        }
+      }
+    }
+  }
+  .disclaimer {
+    border-top: 1px solid #707070;
+    font-size: 11px;
+    .copyright {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    .links {
+      display: flex;
+      a {
+        padding: 3px 8px;
+        &:not(:last-child) {
+          border-right: 1px solid #fff;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
       }
     }
   }
