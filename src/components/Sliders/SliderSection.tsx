@@ -30,8 +30,6 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
         modules={[Pagination]}
         spaceBetween={16}
         slidesPerView={3}
-        // centeredSlides={true}
-        // loop={true}
       >
         {categoryArray.map(({ title, category, image, id }) => (
           <SwiperSlide key={id}>

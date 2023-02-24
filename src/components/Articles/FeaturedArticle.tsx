@@ -2,8 +2,6 @@ import { Card, CardActionArea, CardMedia, CardContent } from '@mui/material'
 import CategoryButton from 'components/Buttons/CategoryButton'
 import './FeaturedArticle.scss'
 
-// import articleImage from 'assets/Melanie-Courbet-Table.jpg'
-
 type Props = {
   categoryArrayItem: {
     title: string
@@ -14,7 +12,6 @@ type Props = {
   }
 }
 const FeaturedArticle = ({ categoryArrayItem }: Props) => {
-  // console.log('categoryArrayItem', categoryArrayItem)
   return (
     <>
       <article className="intro-article" key={categoryArrayItem.id}>

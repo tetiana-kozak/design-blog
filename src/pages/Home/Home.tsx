@@ -17,8 +17,6 @@ const Home = (props: Props) => {
   )
   const regularArray = articlesArray.filter((article) => article.heading === '')
 
-  console.log('regularArray', regularArray)
-
   return (
     <div className="home-page">
       <FeaturedArticles categoryArray={featuredArray} />
