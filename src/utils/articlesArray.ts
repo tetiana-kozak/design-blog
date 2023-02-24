@@ -56,7 +56,7 @@ const ArticlesArray: Articles[] = [
   },
 
   {
-    id: 1,
+    id: 6,
     title:
       'You Can Now Customize Samsung Bespoke Refrigerators With Any Image (*For a Price)',
     description:
@@ -66,7 +66,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Generative-Art-Collection.jpg',
   },
   {
-    id: 1,
+    id: 7,
     title: 'A Modern Red House in Sweden Near the Arctic Circle',
     description:
       'Due to strict zoning rules, this angular house required a red roof which led to the designers wrapping the rest of the house in the same bold color.',
@@ -75,7 +75,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Arctic-Circle-House-Sweden.jpg',
   },
   {
-    id: 2,
+    id: 8,
     title:
       "A Lighting Collection Inspired by Frank Lloyd Wright's Iconic Architecture",
     description:
@@ -85,7 +85,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Frank-Lloyd-Wright-Lighting-Collection.jpeg',
   },
   {
-    id: 2,
+    id: 9,
     title:
       'The Shinola Hotel Is Built in Detroit by Locals Shinola and Bedrock',
     description:
@@ -95,7 +95,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/shinolahotel_shinola.jpg',
   },
   {
-    id: 2,
+    id: 10,
     title: 'New Book Release: The Brutalists: Brutalism’s Best Architects',
     description:
       "Author Owen Hopkins highlights more than 250 Brutalist architects in the new release The Brutalists: Brutalism's Best Architects.",
@@ -104,7 +104,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/The-BrutalistsBrutalisms-Best-Architects-Owen-Hopkins.jpg',
   },
   {
-    id: 3,
+    id: 11,
     title:
       'Our Place Opens Melrose Retail Spot With Colors That Reflect Their Pans',
     description:
@@ -114,7 +114,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Our-Place-Melrose.jpg',
   },
   {
-    id: 4,
+    id: 12,
     title: 'F5: Melanie Courbet Shares the Spark Behind Her Gallery + More',
     description:
       "Gallery founder + director Melanie Courbet shares a worthwhile organization in Sierra Leone, the place she just can't stop shopping + more in Friday Five.",
@@ -123,7 +123,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/F5-Melanie-Courbet.jpg',
   },
   {
-    id: 4,
+    id: 13,
     title:
       'An Apartment on a Residential Yacht That Transforms From One Bedroom to Two',
     description:
@@ -133,7 +133,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/MKCA_Pied-a-Mer-Apartment.jpg',
   },
   {
-    id: 4,
+    id: 14,
     title: 'Business of Design Week 2022 Drives Innovations Amid Uncertainty',
     description:
       "On the occasion of the summit's 20th anniversary, Business of Design Week 2022 will be a celebration with creative leaders under the theme 'Design for Change.'",
@@ -142,7 +142,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Business-of-Design-Week-2022-Nikki-Gonnissen.jpg',
   },
   {
-    id: 5,
+    id: 15,
     title: 'Relevo Rug Sculpts a Welcoming Geometric Landscape Underfoot',
     description:
       "Light and shadow come to play across Milan-based Studiopepe's Relevo, a new hand-tufted, sculptural wool rug design for Muuto.",
@@ -151,7 +151,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Muuto-relevo.jpg',
   },
   {
-    id: 5,
+    id: 16,
     title: "3form's 2023 Color Collection Nails Down Hard-to-Find Hues",
     description:
       "The 10 new pastel colors are inspired by the four seasons and will be permanently added to 3form's color system.",
@@ -160,7 +160,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/3form-2023-color-collection.jpg',
   },
   {
-    id: 5,
+    id: 17,
     title: 'Two Levitating, Rammed Earth Villas in a Costa Rican Jungle',
     description:
       'In the Costa Rican jungle, a pair of jaw-dropping, minimalist villas with rammed earth walls awaits you on your next vacation.',
@@ -169,7 +169,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Achiote-Formafatal-Rammed.jpg',
   },
   {
-    id: 5,
+    id: 18,
     title: 'A Melbourne House With 10 Folds in the Roof To Bring in Light',
     description:
       'A home in Melbourne with an Edwardian front facade is renovated and given a back extension complete with ten folds in its roof to bring in light.',
@@ -178,7 +178,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/10-Fold-House-Timmons.jpg',
   },
   {
-    id: 6,
+    id: 19,
     title: 'Lee Broom Exhibits Within the "British Capsule" at Maison&Objet',
     description:
       'For Maison+Objet\'s "British Capsule," Lee Broom includes a new collection of lighting, as well a selection of complementary furniture and decor.',
@@ -187,7 +187,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Lee-Broom-MaisonObjet.jpg',
   },
   {
-    id: 7,
+    id: 20,
     title: 'The Design Milk X Modenus Talks Lounge Returns to KBIS 2023',
     description:
       "The Design Milk X Modenus Talks Lounge is back at KBIS with a schedule that's jam-packed full of presentations + conversations covering design business, social media + trends.",
@@ -196,7 +196,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Marvila-Attic-Lisbon-KEMA.jpg',
   },
   {
-    id: 8,
+    id: 21,
     title:
       'Hotel Riomar Ibiza Celebrates Orange + Neutrals Inspired by Its Surroundings',
     description:
@@ -206,7 +206,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/hotel-riomar.jpg',
   },
   {
-    id: 9,
+    id: 22,
     title:
       'An Abandoned Lisbon Attic Becomes Airy Apartment With Hidden Kitchen',
     description:
@@ -216,7 +216,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/The-Home-Lamp.jpg',
   },
   {
-    id: 10,
+    id: 23,
     title: 'Desktop Wallpaper: February 2023',
     description:
       "Design Milk's founder Jaime Derringer collaborates with Eskayel on a new mural wallpaper + fabric collection – download one for your desktop wallpaper!",
@@ -225,7 +225,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/February-2023-Desktop-Wallpaper.jpg',
   },
   {
-    id: 11,
+    id: 24,
     title: "Vipp's New Pedal Bin Is Rubbish – Literally!",
     description:
       "The Rubbish special edition of their iconic pedal bin design is made from plastic leftovers and sawdust from Vipp's own production waste.",
@@ -235,7 +235,7 @@ const ArticlesArray: Articles[] = [
   },
 
   {
-    id: 11,
+    id: 25,
     title:
       'F5: Paper Artist Zoe Bradley Shares a Go-To Pen, Favorite Liqueur + More',
     description:
@@ -245,7 +245,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/F5-Zoe-Bradley.jpg',
   },
   {
-    id: 11,
+    id: 26,
     title: 'The Oru Collection Brings the Rounded Furniture Trend To Contract',
     description:
       "The influence of the 1970s + Japanese design create a feeling that's bold + iconic in the Oru collection for contract from Patricia Urquiola for Andreu World.",
@@ -254,7 +254,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Andreu-World-Oru-Collection.jpg',
   },
   {
-    id: 11,
+    id: 27,
     title:
       'Wire Grids Visually Break up the Open Layout of This Flatiron Office',
     description:
@@ -264,7 +264,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Office-of-Tangible-Space.jpg',
   },
   {
-    id: 11,
+    id: 28,
     title: "A 1940s Pink Villa Becomes New Home for Luca Nichetto's Studio",
     description:
       "Luca Nichetto renovated a 40s pink villa to become his Stockholm studio that's curious pink outside with an interior that draws you in.",
@@ -273,7 +273,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/Pink-Villa-Design-Studio.jpg',
   },
   {
-    id: 11,
+    id: 29,
     title: 'Smile Plastics Turns Yogurt Pots Into Terrazzo-Like Surface Panels',
     description:
       'Smile Plastics designs and manufactures hand-crafted, supersized terrazzo-like panels for retail, architecture, interiors, and product design – from waste.',
@@ -282,7 +282,7 @@ const ArticlesArray: Articles[] = [
     image: '/images/GAN_LONDON-STORE.jpg',
   },
   {
-    id: 11,
+    id: 30,
     title:
       'Why Sustainability Will Be the Single Topic at Design China Beijing 2022',
     description:
