@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
             </form>
           </Grid>
           <Grid item xs={12} md={6}>
-            hello 2
+            footer 2
           </Grid>
         </Grid>
       </Container>
