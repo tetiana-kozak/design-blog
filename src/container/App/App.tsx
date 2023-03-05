@@ -1,15 +1,27 @@
 import Header from '../Header/Header'
-import Main from 'container/Main/Main'
-import CssBaseline from '@mui/material/CssBaseline'
-import { StyledEngineProvider } from '@mui/material/styles'
 import Footer from 'container/Footer/Footer'
+import { StyledEngineProvider } from '@mui/material/styles'
+import { Container } from '@mui/material'
+import { Routes, Route } from 'react-router-dom'
+import Home from 'pages/Home/Home'
+import Blog from 'pages/Blog/Blog'
+import AboutUs from 'pages/AboutUs/AboutUs'
+import './App.scss'
 
 type Props = {}
 const App = (props: Props) => {
   return (
     <StyledEngineProvider injectFirst>
       <Header />
-      <Main />
+      <main className="main">
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/about-us" element={<AboutUs />} />
+          </Routes>
+        </Container>
+      </main>
       <Footer />
     </StyledEngineProvider>
   )
