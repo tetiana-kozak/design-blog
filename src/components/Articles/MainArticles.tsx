@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material'
 import MainArticle from './MainArticle'
-import articlesArray from 'utils/articlesArray'
 
 type Props = {
   categoryArray: {

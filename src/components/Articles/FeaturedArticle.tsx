@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardMedia, CardContent } from '@mui/material'
+import { Card, CardActionArea, CardContent } from '@mui/material'
 import CategoryButton from 'components/Buttons/CategoryButton'
 import './FeaturedArticle.scss'
 

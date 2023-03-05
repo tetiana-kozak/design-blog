@@ -1,10 +1,8 @@
-import SectionTitle from 'components/Sections/SectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper'
-import articlesArray from 'utils/articlesArray'
-
 import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
+import SectionTitle from 'components/Sections/SectionTitle'
 import './SliderSection.scss'
 
 type Props = {

@@ -1,6 +1,6 @@
 import { Container } from '@mui/material'
-import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
+import Logo from 'components/Logo/Logo'
 import Search from 'components/Search/Search'
 import './Header.scss'
 

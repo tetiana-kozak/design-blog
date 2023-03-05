@@ -1,7 +1,7 @@
 import { Container, Grid } from '@mui/material'
-import './Footer.scss'
 import TextField from '@mui/material/TextField'
 import { styled } from '@mui/material/styles'
+import './Footer.scss'
 
 type Props = {}
 const Footer = (props: Props) => {
