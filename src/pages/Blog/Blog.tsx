@@ -20,7 +20,7 @@ const Blog = (props: Props) => {
 
   const [category, setCategory] = useState('all')
 
-  const handleCategoryChange = (newCategory: string) => {
+  const filterByCategory = (newCategory: string) => {
     setCategory(newCategory)
   }
 
@@ -33,10 +33,7 @@ const Blog = (props: Props) => {
 
   return (
     <>
-      <Categories
-        categories={categories}
-        filterByCategory={handleCategoryChange}
-      />
+      <Categories categories={categories} filterByCategory={filterByCategory} />
 
       <MainArticles categoryArray={filteredItems} />
     </>
