@@ -25,10 +25,7 @@ const Blog = (props: Props) => {
   }
 
   const filteredItems = articlesArray.filter((article) => {
-    if (category === 'all') {
-      return true
-    }
-    return article.category === category
+    category === 'all' ? true : article.category === category
   })
 
   return (
