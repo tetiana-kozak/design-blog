@@ -24,9 +24,9 @@ const Blog = (props: Props) => {
     setCategory(newCategory)
   }
 
-  const filteredItems = articlesArray.filter((article) => {
+  const filteredItems = articlesArray.filter((article) =>
     category === 'all' ? true : article.category === category
-  })
+  )
 
   return (
     <>
