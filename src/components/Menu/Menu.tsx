@@ -8,6 +8,7 @@ const Menu = (props: Props) => {
       <ul className="menu-list">
         <MenuItem to="/blog">Blog</MenuItem>
         <MenuItem to="/about-us">About Us</MenuItem>
+        <MenuItem to="/article">Article</MenuItem>
       </ul>
     </nav>
   )

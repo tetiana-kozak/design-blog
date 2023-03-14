@@ -6,6 +6,7 @@ import Footer from 'container/Footer/Footer'
 import Home from 'pages/Home/Home'
 import Blog from 'pages/Blog/Blog'
 import AboutUs from 'pages/AboutUs/AboutUs'
+import ArticlePage from 'pages/ArticlePage/ArticlePage'
 import './App.scss'
 
 type Props = {}
@@ -19,6 +20,7 @@ const App = (props: Props) => {
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/article" element={<ArticlePage />} />
           </Routes>
         </Container>
       </main>
