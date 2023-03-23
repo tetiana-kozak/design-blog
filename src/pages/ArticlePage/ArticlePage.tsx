@@ -5,10 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
-import img1 from 'assets/The-Shinola-Hotel/shinolahotel_shinola_1.jpg'
-import img2 from 'assets/The-Shinola-Hotel/shinolahotel_shinola_2.jpg'
-import img3 from 'assets/The-Shinola-Hotel/shinolahotel_shinola_6.jpg'
-import img4 from 'assets/The-Shinola-Hotel/shinolahotel_shinola_14.jpg'
 import author from 'assets/authors/leo-lei.jpg'
 import ArticlesArray, { Article, getArticlesObject } from 'utils/articlesArray'
 import { useParams } from 'react-router-dom'
@@ -40,7 +36,7 @@ const ArticlePage = ({
         </div>
 
         <div className="date-and-author">
-          03.05.2023 <span> By Leo Lei</span>
+          {article.date} <span> By {article.author}</span>
         </div>
       </section>
       <section className="article-slider">
@@ -58,60 +54,26 @@ const ArticlePage = ({
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
         >
-          <SwiperSlide>
-            <div className="slider-slide">
-              <img src={img1} alt="" className="slider-img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-slide">
-              <img src={img2} alt="" className="slider-img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-slide">
-              <img src={img3} alt="" className="slider-img" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-slide">
-              <img src={img4} alt="" className="slider-img" />
-            </div>
-          </SwiperSlide>
+          {article.images?.map((sliderImage) => (
+            <SwiperSlide>
+              <div className="slider-slide">
+                <img src={sliderImage} alt="" className="slider-img" />
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </section>
       <section className="article-body">
-        <p>
-          Shinola Hotel is a boutique hotel located in Detroit, Michigan, built
-          by Shinola and Bedrock. The property boasts 129 rooms and includes
-          four food and beverage concepts from award-winning chef, Andrew
-          Carmellini. The hotel’s hyper-local design is evident everywhere, from
-          ceramic wall tiles and millwork made by local merchants to mini bars
-          stocked with local goods and Detroit-designed wallpaper.
-        </p>
-        <img src={img2} alt="" />
-        <p>
-          Aiming to be a gathering place for both residents of Detroit and
-          tourists, the main living room space offers a warm and inviting
-          setting for a meeting over lunch, drinks, or a late-night snack. The
-          residential-style guest rooms and suites have hardwood floors and
-          comfortable mid-century contemporary furnishings. Loft-style windows
-          offer abundant natural light while earthy tones create a relaxing
-          ambience.
-        </p>
-        <p>
-          The hotel features an award-winning restaurant, San Morello, serving
-          authentic wood-fired cuisine, house-made pastas, and pizzas crafted
-          using local, seasonal ingredients. The floor is made of stone and has
-          a checkerboard pattern in Rojo Alicante and Crema Ella with inset oak
-          and bronze accents.
-        </p>
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
+        <p>{article.content![0]}</p>
+        <img src={article.images![0]} alt="" />
+        {article.content?.slice(1).map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+        {article.images?.slice(1).map((articleImage) => (
+          <img src={articleImage} alt="" />
+        ))}
         <div className="photographer">
-          Photos by <span> Nicole Franzen </span>
+          Photos by <span> {article.photographer} </span>
         </div>
       </section>
       <section className="article-author">

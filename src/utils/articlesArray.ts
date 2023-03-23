@@ -5,17 +5,38 @@ export type Article = {
   mainImage: string
   id: number
   heading: string
+  images?: string[]
+  content?: string[]
+  date?: string
+  author?: string
+  photographer?: string
 }
 
 const ArticlesArray: Article[] = [
   {
     id: 1,
-    title: 'Wooden Sculptures Carved From Storm-Battered Trees',
+    title: 'Kennedy Yanko’s Poetic Fusion of Metal and “Paint Skin”',
     description:
-      'These monolithic sculptures carved and shaped by artist Vince Skelly are made from single logs recovered from a windstorm.',
+      'This new exhibition at the Patrick Parrish Gallery in New York City showcases an impressive list of 42 artists and designers.',
     category: 'art',
     heading: 'featured',
-    mainImage: '/images/vince-skelly-a-conversation.jpg',
+    mainImage: '/images/Kennedy_Yanko_Jeffrey_Deitch.jpg',
+    images: [
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_02.jpg',
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_01.jpg',
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_05.jpg',
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_07.jpg',
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_08.jpg',
+      '/images/Kennedy-Yanko-Fusion/Kennedy_Yanko_Jeffrey_Deitch_06.jpg',
+    ],
+    content: [
+      'Brooklyn-based artist Kennedy Yanko uses salvaged metal and blanket-like “paint skins” to create incredible artworks that challenge the definition of painting and perfectly balance a range of oppositions. Her current exhibition Humming on Life presents 10 new artworks on view at Jeffery Deitch in New York through April 22nd.',
+      'Metal feels weightless, refuse becomes beautiful, and paint breaks free from canvas. The “paint skins” in Yanko’s work are literally just paint – first created flat and then draped over, between, and within the crushed metal. The fabric-like folds and crushed-metal dents echo each other while both feel organically matched – as if the two elements have somehow grown together.',
+      'These new 2023 works add a new layer to her process. On previous works, the color of the paint skins was inspired by an existing color on the found metal: perhaps a lime green from oxidized copper or a burgundy from a small patch of rust. But in these new works, Kennedy has introduced the act of painting onto the metal itself with more colors before pieces are fire-cut and additionally crushed. This process introduces more complex color interactions while maintaining a contrast of time and texture between the elements.',
+    ],
+    date: '03.23.23',
+    author: 'David Behringer',
+    photographer: 'Martin Parsekian',
   },
   {
     id: 2,
