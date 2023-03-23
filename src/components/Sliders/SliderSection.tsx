@@ -10,7 +10,7 @@ type Props = {
     title: string
     description: string
     category: string
-    image: string
+    mainImage: string
     id: number
   }[]
   sectionTitle: string
@@ -29,10 +29,10 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
         spaceBetween={16}
         slidesPerView={3}
       >
-        {categoryArray.map(({ title, category, image, id }) => (
+        {categoryArray.map(({ title, category, mainImage, id }) => (
           <SwiperSlide key={id}>
             <a className="slider-slide" href="#">
-              <img src={image} alt="" className="slider-img" />
+              <img src={mainImage} alt="" className="slider-img" />
               <div className="slider-details">
                 <a href="#">
                   <h5>{category}</h5>

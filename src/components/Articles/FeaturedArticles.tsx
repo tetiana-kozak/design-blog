@@ -6,7 +6,7 @@ type Props = {
     title: string
     description: string
     category: string
-    image: string
+    mainImage: string
     id: number
   }[]
 }

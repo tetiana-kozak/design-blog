@@ -6,7 +6,7 @@ type Props = {
     title: string
     description: string
     category: string
-    image: string
+    mainImage: string
     id: number
   }[]
 }
@@ -15,16 +15,19 @@ const MainArticles = ({ categoryArray }: Props) => {
     <>
       <section className="main-articles">
         <Grid container spacing={6}>
-          {categoryArray.map(({ title, description, category, image, id }) => (
-            <Grid item xs={12} sm={12} md={12} key={id}>
-              <MainArticle
-                title={title}
-                description={description}
-                category={category}
-                image={image}
-              />
-            </Grid>
-          ))}
+          {categoryArray.map(
+            ({ title, description, category, mainImage, id }) => (
+              <Grid item xs={12} sm={12} md={12} key={id}>
+                <MainArticle
+                  title={title}
+                  description={description}
+                  category={category}
+                  mainImage={mainImage}
+                  id={id}
+                />
+              </Grid>
+            )
+          )}
         </Grid>
       </section>
     </>

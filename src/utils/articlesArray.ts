@@ -1,13 +1,13 @@
-type Articles = {
+export type Article = {
   title: string
   description: string
   category: string
-  image: string
+  mainImage: string
   id: number
   heading: string
 }
 
-const ArticlesArray: Articles[] = [
+const ArticlesArray: Article[] = [
   {
     id: 1,
     title: 'Wooden Sculptures Carved From Storm-Battered Trees',
@@ -15,7 +15,7 @@ const ArticlesArray: Articles[] = [
       'These monolithic sculptures carved and shaped by artist Vince Skelly are made from single logs recovered from a windstorm.',
     category: 'art',
     heading: 'featured',
-    image: '/images/vince-skelly-a-conversation.jpg',
+    mainImage: '/images/vince-skelly-a-conversation.jpg',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const ArticlesArray: Articles[] = [
       "The Nivél Pendant's flat panel LED light pivots on an axis to focus light downward or as a soft wall wash.",
     category: 'home furnishing',
     heading: 'featured',
-    image: '/images/Pablo-Designs-Nivel-Pendant.jpg',
+    mainImage: '/images/Pablo-Designs-Nivel-Pendant.jpg',
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const ArticlesArray: Articles[] = [
       'Working with the theme of "Colour Vibes," color phenom Tekla Evelina Severin transforms empty space into surreal, color-blocked exhibition.',
     category: 'interrior design',
     heading: 'featured',
-    image: '/images/Dimensions-of-Colour-Formex.jpg',
+    mainImage: '/images/Dimensions-of-Colour-Formex.jpg',
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const ArticlesArray: Articles[] = [
       'Listen to all of the panel conversations that happened in the DMM Talks Lounge at KBIS 2023.',
     category: 'featured',
     heading: 'featured',
-    image: '/images/KBIS-2023-DMM-Talks-Lounge.jpg',
+    mainImage: '/images/KBIS-2023-DMM-Talks-Lounge.jpg',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const ArticlesArray: Articles[] = [
       "Conceptual artist Charles Gaines presents new colorful pixelated abstractions of 'Southern Trees' in New York.",
     category: 'art',
     heading: 'featured',
-    image: '/images/Charles-Gaines-Southern-Trees.jpg',
+    mainImage: '/images/Charles-Gaines-Southern-Trees.jpg',
   },
 
   {
@@ -63,7 +63,7 @@ const ArticlesArray: Articles[] = [
       'Samsung has unlocked unlimited possibilities by allowing customers to upload any image, design, or photo to adorn their Bespoke fridges.',
     category: 'technology',
     heading: '',
-    image: '/images/Generative-Art-Collection.jpg',
+    mainImage: '/images/Generative-Art-Collection.jpg',
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const ArticlesArray: Articles[] = [
       'Due to strict zoning rules, this angular house required a red roof which led to the designers wrapping the rest of the house in the same bold color.',
     category: 'architecture',
     heading: '',
-    image: '/images/Arctic-Circle-House-Sweden.jpg',
+    mainImage: '/images/Arctic-Circle-House-Sweden.jpg',
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ const ArticlesArray: Articles[] = [
       "The Frank Lloyd Wright series for YAMAGIWA includes representations of a few of the legendary architect's original masterpieces in the form of lighting.",
     category: 'home furnishing',
     heading: '',
-    image: '/images/Frank-Lloyd-Wright-Lighting-Collection.jpeg',
+    mainImage: '/images/Frank-Lloyd-Wright-Lighting-Collection.jpeg',
   },
   {
     id: 9,
@@ -92,7 +92,7 @@ const ArticlesArray: Articles[] = [
       "Shinola Hotel is a boutique hotel in Detroit with a hyper-local design that's evident everywhere, from ceramic wall tiles to millwork made by local merchants.",
     category: 'travel',
     heading: '',
-    image: '/images/shinolahotel_shinola.jpg',
+    mainImage: '/images/shinolahotel_shinola.jpg',
   },
   {
     id: 10,
@@ -101,7 +101,8 @@ const ArticlesArray: Articles[] = [
       "Author Owen Hopkins highlights more than 250 Brutalist architects in the new release The Brutalists: Brutalism's Best Architects.",
     category: 'architecture',
     heading: '',
-    image: '/images/The-BrutalistsBrutalisms-Best-Architects-Owen-Hopkins.jpg',
+    mainImage:
+      '/images/The-BrutalistsBrutalisms-Best-Architects-Owen-Hopkins.jpg',
   },
   {
     id: 11,
@@ -111,7 +112,7 @@ const ArticlesArray: Articles[] = [
       'Our Place hired Ringo Studio to create a store with visually delightful product displays and a color palette that matches their popular pans.',
     category: 'commercial',
     heading: '',
-    image: '/images/Our-Place-Melrose.jpg',
+    mainImage: '/images/Our-Place-Melrose.jpg',
   },
   {
     id: 12,
@@ -120,7 +121,7 @@ const ArticlesArray: Articles[] = [
       "Gallery founder + director Melanie Courbet shares a worthwhile organization in Sierra Leone, the place she just can't stop shopping + more in Friday Five.",
     category: 'art',
     heading: '',
-    image: '/images/F5-Melanie-Courbet.jpg',
+    mainImage: '/images/F5-Melanie-Courbet.jpg',
   },
   {
     id: 13,
@@ -130,7 +131,7 @@ const ArticlesArray: Articles[] = [
       "Michael K. Chen Architecture designed a transforming Pied-å-Mer that serves as a couple's holiday retreat located aboard a residential yacht.",
     category: 'architecture',
     heading: '',
-    image: '/images/MKCA_Pied-a-Mer-Apartment.jpg',
+    mainImage: '/images/MKCA_Pied-a-Mer-Apartment.jpg',
   },
   {
     id: 14,
@@ -139,7 +140,7 @@ const ArticlesArray: Articles[] = [
       "On the occasion of the summit's 20th anniversary, Business of Design Week 2022 will be a celebration with creative leaders under the theme 'Design for Change.'",
     category: 'featured',
     heading: '',
-    image: '/images/Business-of-Design-Week-2022-Nikki-Gonnissen.jpg',
+    mainImage: '/images/Business-of-Design-Week-2022-Nikki-Gonnissen.jpg',
   },
   {
     id: 15,
@@ -148,7 +149,7 @@ const ArticlesArray: Articles[] = [
       "Light and shadow come to play across Milan-based Studiopepe's Relevo, a new hand-tufted, sculptural wool rug design for Muuto.",
     category: 'home furnishing',
     heading: '',
-    image: '/images/Muuto-relevo.jpg',
+    mainImage: '/images/Muuto-relevo.jpg',
   },
   {
     id: 16,
@@ -157,7 +158,7 @@ const ArticlesArray: Articles[] = [
       "The 10 new pastel colors are inspired by the four seasons and will be permanently added to 3form's color system.",
     category: 'commercial',
     heading: '',
-    image: '/images/3form-2023-color-collection.jpg',
+    mainImage: '/images/3form-2023-color-collection.jpg',
   },
   {
     id: 17,
@@ -166,7 +167,7 @@ const ArticlesArray: Articles[] = [
       'In the Costa Rican jungle, a pair of jaw-dropping, minimalist villas with rammed earth walls awaits you on your next vacation.',
     category: 'travel',
     heading: '',
-    image: '/images/Achiote-Formafatal-Rammed.jpg',
+    mainImage: '/images/Achiote-Formafatal-Rammed.jpg',
   },
   {
     id: 18,
@@ -175,7 +176,7 @@ const ArticlesArray: Articles[] = [
       'A home in Melbourne with an Edwardian front facade is renovated and given a back extension complete with ten folds in its roof to bring in light.',
     category: 'architecture',
     heading: '',
-    image: '/images/10-Fold-House-Timmons.jpg',
+    mainImage: '/images/10-Fold-House-Timmons.jpg',
   },
   {
     id: 19,
@@ -184,7 +185,7 @@ const ArticlesArray: Articles[] = [
       'For Maison+Objet\'s "British Capsule," Lee Broom includes a new collection of lighting, as well a selection of complementary furniture and decor.',
     category: 'home furnishing',
     heading: '',
-    image: '/images/Lee-Broom-MaisonObjet.jpg',
+    mainImage: '/images/Lee-Broom-MaisonObjet.jpg',
   },
   {
     id: 20,
@@ -193,7 +194,7 @@ const ArticlesArray: Articles[] = [
       "The Design Milk X Modenus Talks Lounge is back at KBIS with a schedule that's jam-packed full of presentations + conversations covering design business, social media + trends.",
     category: 'featured',
     heading: '',
-    image: '/images/Marvila-Attic-Lisbon-KEMA.jpg',
+    mainImage: '/images/Marvila-Attic-Lisbon-KEMA.jpg',
   },
   {
     id: 21,
@@ -203,7 +204,7 @@ const ArticlesArray: Articles[] = [
       'Hotel Riomar is a boutique hotel in Ibiza that embraces its mid-century layered interiors by celebrating the nostalgic qualities of its past.',
     category: 'travel',
     heading: 'last launches',
-    image: '/images/hotel-riomar.jpg',
+    mainImage: '/images/hotel-riomar.jpg',
   },
   {
     id: 22,
@@ -213,7 +214,7 @@ const ArticlesArray: Articles[] = [
       'KEMA studio transformed the unlivable MARVILA ATTIC into a bright and airy apartment with a hidden kitchen and built-in wall sofa.',
     category: 'architecture',
     heading: 'last launches',
-    image: '/images/The-Home-Lamp.jpg',
+    mainImage: '/images/The-Home-Lamp.jpg',
   },
   {
     id: 23,
@@ -222,7 +223,7 @@ const ArticlesArray: Articles[] = [
       "Design Milk's founder Jaime Derringer collaborates with Eskayel on a new mural wallpaper + fabric collection – download one for your desktop wallpaper!",
     category: 'art',
     heading: 'last launches',
-    image: '/images/February-2023-Desktop-Wallpaper.jpg',
+    mainImage: '/images/February-2023-Desktop-Wallpaper.jpg',
   },
   {
     id: 24,
@@ -231,7 +232,7 @@ const ArticlesArray: Articles[] = [
       "The Rubbish special edition of their iconic pedal bin design is made from plastic leftovers and sawdust from Vipp's own production waste.",
     category: 'home furnishing',
     heading: 'last launches',
-    image: '/images/Rubbish-Waste-Bin-Recycled.jpg',
+    mainImage: '/images/Rubbish-Waste-Bin-Recycled.jpg',
   },
 
   {
@@ -242,7 +243,7 @@ const ArticlesArray: Articles[] = [
       'In this Friday Five, Wales-based paper artist Zoe Bradley shares an inspiring collaboration, go-to pen, a new favorite liqueur, and more.',
     category: 'art',
     heading: 'last launches',
-    image: '/images/F5-Zoe-Bradley.jpg',
+    mainImage: '/images/F5-Zoe-Bradley.jpg',
   },
   {
     id: 26,
@@ -251,7 +252,7 @@ const ArticlesArray: Articles[] = [
       "The influence of the 1970s + Japanese design create a feeling that's bold + iconic in the Oru collection for contract from Patricia Urquiola for Andreu World.",
     category: 'commercial',
     heading: 'popular',
-    image: '/images/Andreu-World-Oru-Collection.jpg',
+    mainImage: '/images/Andreu-World-Oru-Collection.jpg',
   },
   {
     id: 27,
@@ -261,7 +262,7 @@ const ArticlesArray: Articles[] = [
       'Office of Tangible Space created a bright, airy, and inviting new interior with custom solutions for the new ScienceIO headquarters.',
     category: 'commercial',
     heading: 'popular',
-    image: '/images/Office-of-Tangible-Space.jpg',
+    mainImage: '/images/Office-of-Tangible-Space.jpg',
   },
   {
     id: 28,
@@ -270,7 +271,7 @@ const ArticlesArray: Articles[] = [
       "Luca Nichetto renovated a 40s pink villa to become his Stockholm studio that's curious pink outside with an interior that draws you in.",
     category: 'interrior design',
     heading: 'popular',
-    image: '/images/Pink-Villa-Design-Studio.jpg',
+    mainImage: '/images/Pink-Villa-Design-Studio.jpg',
   },
   {
     id: 29,
@@ -279,7 +280,7 @@ const ArticlesArray: Articles[] = [
       'Smile Plastics designs and manufactures hand-crafted, supersized terrazzo-like panels for retail, architecture, interiors, and product design – from waste.',
     category: 'home furnishing',
     heading: 'popular',
-    image: '/images/GAN_LONDON-STORE.jpg',
+    mainImage: '/images/GAN_LONDON-STORE.jpg',
   },
   {
     id: 30,
@@ -289,8 +290,17 @@ const ArticlesArray: Articles[] = [
       "This year's event, also known as Sustainable Design China Summit, will cover the world of design through a sustainability lens.",
     category: 'architecture',
     heading: 'popular',
-    image: '/images/design-china-beijing.jpg',
+    mainImage: '/images/design-china-beijing.jpg',
   },
 ]
+
+export const getArticlesObject = (array: Article[]) =>
+  array.reduce(
+    (object, article) => ({
+      ...object,
+      [article.id]: article,
+    }),
+    {}
+  )
 
 export default ArticlesArray
