@@ -22,9 +22,9 @@ type Props = {
 const ArticlePage = ({
   articlesObject = getArticlesObject(ArticlesArray),
 }: Props) => {
-  const { articleId } = useParams()
+  const { id } = useParams()
 
-  const article = articlesObject[parseInt(articleId!)]
+  const article = articlesObject[parseInt(id!)]
 
   return (
     <div className="single-article">
