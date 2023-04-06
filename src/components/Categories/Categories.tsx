@@ -11,8 +11,6 @@ const Categories = ({
   filterByCategory,
   selectedCategory,
 }: Props) => {
-  console.log('selectedCategory', selectedCategory)
-
   return (
     <nav className="category-navigation">
       <ul className="category-list">
