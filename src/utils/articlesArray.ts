@@ -107,8 +107,8 @@ const ArticlesArray: Article[] = [
     images: [
       '/images/KBIS-2023-DMM-Talks/dmmtalks-2020-lounge-kbis.jpg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-2.jpg',
-      '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-5.jpg',
-      '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-11.jpg',
+      '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-5.jpeg',
+      '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-11.jpeg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-SKS-fridge-1.jpg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-SKS-fridge-3.jpg',
     ],
