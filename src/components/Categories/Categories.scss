@@ -3,16 +3,23 @@
   .category-list {
     display: flex;
     justify-content: space-between;
-    li {
+    .filtered-button {
       text-transform: capitalize;
       padding: 8px 15px;
       z-index: 10;
+      background-color: transparent;
 
       &:hover {
         background-color: rgba(203, 203, 203, 0.259);
         cursor: pointer;
         transition: all ease-in-out 0.3s;
       }
+    }
+    .active {
+      text-transform: capitalize;
+      padding: 8px 15px;
+      z-index: 10;
+      background-color: rgba(203, 203, 203, 0.259);
     }
   }
 }

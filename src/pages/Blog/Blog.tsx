@@ -30,7 +30,11 @@ const Blog = (props: Props) => {
 
   return (
     <>
-      <Categories categories={categories} filterByCategory={filterByCategory} />
+      <Categories
+        categories={categories}
+        filterByCategory={filterByCategory}
+        selectedCategory={category}
+      />
 
       <MainArticles categoryArray={filteredItems} />
     </>
