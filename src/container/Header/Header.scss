@@ -2,11 +2,23 @@
   box-shadow: 1px 5px 5px rgba(143, 143, 143, 0.08);
 }
 
-.main-header-inner {
+.main-header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+
+  .main-header__actions {
+    display: flex;
+    .favorite-icon {
+      color: #434343;
+      margin-left: 15px;
+      cursor: pointer;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
 }
 
 .MuiInput-input {
