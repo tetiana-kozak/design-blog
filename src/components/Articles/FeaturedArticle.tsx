@@ -17,7 +17,7 @@ const FeaturedArticle = ({ categoryArrayItem }: Props) => {
     <>
       <article className="intro-article" key={categoryArrayItem.id}>
         <Link to={`/blog/${categoryArrayItem.id}`}>
-          <Card className="card">
+          <Card className="card featured-card">
             <CardActionArea>
               <div className="card-media card-relative">
                 <img
@@ -29,7 +29,7 @@ const FeaturedArticle = ({ categoryArrayItem }: Props) => {
                   <CategoryButton category={categoryArrayItem.category} />
                 </div>
               </div>
-              <CardContent className="card-content">
+              <CardContent className="card-content-featured">
                 <h3>{categoryArrayItem.title}</h3>
                 <p> {categoryArrayItem.description}</p>
               </CardContent>

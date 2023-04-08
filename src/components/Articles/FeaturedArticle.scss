@@ -11,11 +11,13 @@
   background-color: #fff;
   color: #000;
 
-  &:hover {
-    color: #585858;
-  }
   .card-img {
     width: 100%;
+  }
+}
+.featured-card {
+  &:hover {
+    color: #585858;
   }
 }
 
@@ -23,7 +25,7 @@
   background: none;
 }
 
-.card-content {
+.card-content-featured {
   padding: 0;
   margin-top: 25px;
   margin-bottom: 10px;

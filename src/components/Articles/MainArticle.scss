@@ -2,30 +2,47 @@
   .card {
     display: flex;
 
-    &:hover {
-      color: #585858;
-      cursor: pointer;
-    }
-
-    .card-img {
+    & > a {
       width: 30%;
     }
+
     .card-content {
       display: flex;
       align-items: center;
       padding-left: 20px;
+      width: 70%;
 
       .card-content-inner {
-        .title {
-          font-weight: 700;
-          font-size: 27px;
-          line-height: 34px;
-          padding: 15px 0;
+        width: 100%;
+        .card-content-actions {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .favorite-icon {
+            color: #000000;
+            &:hover,
+            &:active {
+              background: none;
+            }
+          }
         }
-        .description {
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 20px;
+        a {
+          &:hover {
+            cursor: pointer;
+            color: #585858;
+          }
+          .title {
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 34px;
+            padding: 15px 0;
+          }
+          .description {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
       }
     }
