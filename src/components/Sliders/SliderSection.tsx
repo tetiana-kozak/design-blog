@@ -34,9 +34,9 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
             <a className="slider-slide" href="#">
               <img src={mainImage} alt="" className="slider-img" />
               <div className="slider-details">
-                <a href="#">
-                  <h5>{category}</h5>
-                </a>
+                {/* <a href="#"> */}
+                <h5>{category}</h5>
+                {/* </a> */}
                 <h4>{title}</h4>
               </div>
             </a>
