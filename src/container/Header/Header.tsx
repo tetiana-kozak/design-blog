@@ -22,7 +22,7 @@ const Header = (props: Props) => {
           <Logo />
           <div className="main-header__actions">
             <Search />
-            <div className="favorite-icon">
+            <div className="main-header__favorite-icon">
               <FavoriteIcon className="icon" />
               <span className="counter">{favoriteArticlesCount}</span>
             </div>

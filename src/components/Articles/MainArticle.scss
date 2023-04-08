@@ -18,14 +18,6 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-
-          .favorite-icon {
-            color: #000000;
-            &:hover,
-            &:active {
-              background: none;
-            }
-          }
         }
         a {
           &:hover {

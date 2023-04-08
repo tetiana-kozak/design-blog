@@ -29,15 +29,15 @@
           margin: 0 15px;
         }
       }
+    }
+  }
 
-      .favorite-icon {
-        color: #000000;
-        padding: 0;
-        &:hover,
-        &:active {
-          background: none;
-        }
-      }
+  .favorite-icon {
+    color: #000000;
+    padding: 0;
+    &:hover,
+    &:active {
+      background: none;
     }
   }
 

@@ -1,11 +1,8 @@
-import { IconButton, Button, Card, CardMedia, CardContent } from '@mui/material'
+import { Card, CardMedia, CardContent } from '@mui/material'
 import CategoryButton from 'components/Buttons/CategoryButton'
 import { Link } from 'react-router-dom'
 import './MainArticle.scss'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
-import { toggleLike } from 'redux/favoritesReducer'
+import FavoriteButton from 'components/FavouriteButton/FavoriteButton'
 
 type Props = {
   title: string
@@ -22,9 +19,6 @@ const MainArticle = ({
   mainImage,
   id,
 }: Props) => {
-  const isFavorite = useAppSelector((state) => state.favoriteArticles[id])
-  const dispatch = useAppDispatch()
-
   return (
     <>
       <article className="main-article">
@@ -49,13 +43,7 @@ const MainArticle = ({
             <div className="card-content-inner">
               <div className="card-content-actions">
                 <CategoryButton category={category} />
-                <IconButton
-                  disableRipple={true}
-                  className="favorite-icon"
-                  onClick={() => dispatch(toggleLike(id))}
-                >
-                  {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-                </IconButton>
+                <FavoriteButton id={id} />
               </div>
               <Link to={`/blog/${id}`}>
                 <h2 className="title">{title}</h2>

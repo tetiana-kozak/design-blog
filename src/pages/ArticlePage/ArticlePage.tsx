@@ -8,11 +8,7 @@ import 'swiper/css/pagination'
 import author from 'assets/authors/leo-lei.jpg'
 import ArticlesArray, { Article, getArticlesObject } from 'utils/articlesArray'
 import { useParams } from 'react-router-dom'
-import { IconButton } from '@mui/material'
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import FavoriteIcon from '@mui/icons-material/Favorite'
-import { toggleLike } from 'redux/favoritesReducer'
+import FavoriteButton from 'components/FavouriteButton/FavoriteButton'
 
 type Props = {
   articlesObject?: {
@@ -26,10 +22,6 @@ const ArticlePage = ({
   const { id } = useParams()
 
   const article = articlesObject[parseInt(id!)]
-  const isFavorite = useAppSelector(
-    (state) => state.favoriteArticles[article.id]
-  )
-  const dispatch = useAppDispatch()
 
   return (
     <div className="single-article">
@@ -47,13 +39,7 @@ const ArticlePage = ({
           <div className="date-and-author">
             {article.date} <span> By {article.author}</span>
           </div>
-          <IconButton
-            disableRipple={true}
-            className="favorite-icon"
-            onClick={() => dispatch(toggleLike(article.id))}
-          >
-            {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-          </IconButton>
+          <FavoriteButton id={article.id} />
         </div>
       </section>
       <section className="article-slider">
