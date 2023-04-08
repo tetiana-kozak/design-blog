@@ -43,17 +43,18 @@ const ArticlePage = ({
             <img src={imageDecor} alt="" />
           </div>
         </div>
-
-        <div className="date-and-author">
-          {article.date} <span> By {article.author}</span>
+        <div className="heading-subtitle">
+          <div className="date-and-author">
+            {article.date} <span> By {article.author}</span>
+          </div>
+          <IconButton
+            disableRipple={true}
+            className="favorite-icon"
+            onClick={() => dispatch(toggleLike(article.id))}
+          >
+            {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+          </IconButton>
         </div>
-        <IconButton
-          disableRipple={true}
-          className="favorite-icon"
-          onClick={() => dispatch(toggleLike(article.id))}
-        >
-          {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-        </IconButton>
       </section>
       <section className="article-slider">
         <Swiper

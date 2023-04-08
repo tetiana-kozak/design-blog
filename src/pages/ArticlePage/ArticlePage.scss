@@ -14,14 +14,29 @@
       text-align: center;
     }
 
-    .date-and-author {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
+    .heading-subtitle {
+      display: flex;
+      align-items: center;
+      .date-and-author {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
 
-      span {
-        border-left: 2px solid #000;
-        padding-left: 5px;
+        span {
+          border-left: 2px solid #000;
+          border-right: 2px solid #000;
+          padding: 0 15px;
+          margin: 0 15px;
+        }
+      }
+
+      .favorite-icon {
+        color: #000000;
+        padding: 0;
+        &:hover,
+        &:active {
+          background: none;
+        }
       }
     }
   }
