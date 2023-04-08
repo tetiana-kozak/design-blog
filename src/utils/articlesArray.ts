@@ -105,7 +105,6 @@ const ArticlesArray: Article[] = [
     heading: 'featured',
     mainImage: '/images/KBIS-2023-DMM-Talks-Lounge.jpg',
     images: [
-      '/images/KBIS-2023-DMM-Talks/dmmtalks-2020-lounge-kbis.jpg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-2.jpg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-5.jpeg',
       '/images/KBIS-2023-DMM-Talks/kbis-2023-round-up-11.jpeg',
