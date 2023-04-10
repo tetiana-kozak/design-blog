@@ -8,6 +8,7 @@ import Blog from 'pages/Blog/Blog'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import ArticlePage from 'pages/ArticlePage/ArticlePage'
 import './App.scss'
+import Favorites from 'pages/Favorites/Favorites'
 
 type Props = {}
 const App = (props: Props) => {
@@ -21,6 +22,7 @@ const App = (props: Props) => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/blog/:id" element={<ArticlePage />} />
+            <Route path="/favorites" element={<Favorites />} />
           </Routes>
         </Container>
       </main>

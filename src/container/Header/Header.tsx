@@ -5,6 +5,7 @@ import Search from 'components/Search/Search'
 import './Header.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppSelector } from 'redux/hooks'
+import { NavLink } from 'react-router-dom'
 
 type Props = {}
 const Header = (props: Props) => {
@@ -22,10 +23,12 @@ const Header = (props: Props) => {
           <Logo />
           <div className="main-header__actions">
             <Search />
-            <div className="main-header__favorite-icon">
-              <FavoriteIcon className="icon" />
-              <span className="counter">{favoriteArticlesCount}</span>
-            </div>
+            <NavLink to={'/favorites'}>
+              <div className="main-header__favorite-icon">
+                <FavoriteIcon className="icon" />
+                <span className="counter">{favoriteArticlesCount}</span>
+              </div>
+            </NavLink>
           </div>
         </div>
       </Container>
