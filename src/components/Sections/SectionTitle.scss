@@ -3,37 +3,35 @@
   padding: 20px;
   display: flex;
   justify-content: center;
-  a {
-    h3 {
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      width: fit-content;
-      position: relative;
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: fit-content;
+    position: relative;
 
-      &::before,
-      &::after {
-        content: '';
-        background-repeat: no-repeat;
-        height: 30px;
-        width: 30px;
-        position: absolute;
-      }
-      &::before {
-        content: '';
-        background-image: url('./../../assets/corner-decoration-top-left.svg');
-        left: -30px;
-        top: -12px;
-      }
+    &::before,
+    &::after {
+      content: '';
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+    }
+    &::before {
+      content: '';
+      background-image: url('./../../assets/corner-decoration-top-left.svg');
+      left: -30px;
+      top: -12px;
+    }
 
-      &::after {
-        content: '';
-        background-image: url('./../../assets/corner-decoration-bottom-right.svg');
-        right: -30px;
-        bottom: -12px;
-      }
+    &::after {
+      content: '';
+      background-image: url('./../../assets/corner-decoration-bottom-right.svg');
+      right: -30px;
+      bottom: -12px;
     }
   }
 }

@@ -7,9 +7,7 @@ type Props = {
 const SectionTitle = ({ sectionTitle }: Props) => {
   return (
     <div className="section-title">
-      <a href="#">
-        <h3>{sectionTitle}</h3>
-      </a>
+      <h3>{sectionTitle}</h3>
     </div>
   )
 }
