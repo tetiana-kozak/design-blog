@@ -76,7 +76,6 @@ const ArticlesArray: Article[] = [
     heading: 'featured',
     mainImage: '/images/Dimensions-of-Colour-Formex.jpg',
     images: [
-      '/images/Tekla-Evelina-Severin/Dimensions-of-Colour-Formex-Tekla-Evelina-Severin-1.jpg',
       '/images/Tekla-Evelina-Severin/Dimensions-of-Colour-Formex-Tekla-Evelina-Severin-2.jpg',
       '/images/Tekla-Evelina-Severin/Dimensions-of-Colour-Formex-Tekla-Evelina-Severin-3.jpg',
       '/images/Tekla-Evelina-Severin/Dimensions-of-Colour-Formex-Tekla-Evelina-Severin-4.jpg',
