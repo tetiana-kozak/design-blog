@@ -1,5 +1,6 @@
 .favorites__card {
   border-radius: 0;
+  position: relative;
   .favorites__img {
     max-height: 230px;
   }
@@ -23,7 +24,29 @@
   }
 
   &:hover .favorites__title {
-    color: #757575;
-    transition: all ease-in-out 0.3s;
+    color: #585858;
+    transition: all ease-in-out 0.1s;
+  }
+
+  .clear-icon {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: #ededed;
+    color: #585858;
+    padding: 1px;
+    display: none;
+
+    .icon {
+      font-size: 30px;
+    }
+    span {
+      padding-right: 3px;
+    }
+  }
+
+  &:hover .clear-icon {
+    display: flex;
+    align-items: center;
   }
 }

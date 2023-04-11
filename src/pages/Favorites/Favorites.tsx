@@ -4,6 +4,8 @@ import ArticlesArray, { getArticlesObject } from 'utils/articlesArray'
 import './Favorites.scss'
 import SectionTitle from 'components/Sections/SectionTitle'
 import { Link } from 'react-router-dom'
+import ClearIcon from '@mui/icons-material/Clear'
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
 
 type Props = {}
 const Favorites = (props: Props) => {
@@ -33,6 +35,9 @@ const Favorites = (props: Props) => {
                     {article.description}..
                   </div>
                 </CardContent>
+                <div className="clear-icon">
+                  <DeleteForeverIcon className="icon" /> <span>remove</span>
+                </div>
               </Card>
             </Link>
           </Grid>
