@@ -24,7 +24,7 @@ const FavoriteArticle = ({ id, mainImage, title, description }: Props) => {
         />
         <CardContent className="favorites__card-content">
           <div className="favorites__title">{title}</div>
-          <div className="favorites__description">{description}..</div>
+          <div className="favorites__description">{description}</div>
         </CardContent>
       </Link>
       <div className="clear-icon" onClick={() => dispatch(toggleLike(id))}>

@@ -7,19 +7,26 @@
   .favorites__card-content {
     padding: 0;
     padding: 0 8px;
-    height: 160px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .favorites__title {
       font-size: 21px;
+      line-height: 25px;
       font-weight: 700;
     }
     .favorites__description {
       font-size: 14px;
+      line-height: 20px;
       margin-top: 8px;
       color: #7d7d7d;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
 
