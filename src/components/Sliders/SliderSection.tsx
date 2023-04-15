@@ -27,7 +27,17 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
         }}
         modules={[Pagination]}
         spaceBetween={16}
-        slidesPerView={3}
+        slidesPerView={1}
+        breakpoints={{
+          700: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          991: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
+        }}
       >
         {categoryArray.map(({ title, category, mainImage, id }) => (
           <SwiperSlide key={id}>
