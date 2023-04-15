@@ -67,8 +67,10 @@
   .no-description {
     font-size: 22px;
     margin-bottom: 50px;
+    text-align: center;
   }
   .no-image {
+    width: 100%;
     max-width: 400px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);

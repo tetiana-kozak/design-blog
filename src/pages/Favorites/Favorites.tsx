@@ -19,7 +19,7 @@ const Favorites = (props: Props) => {
       <SectionTitle sectionTitle="Favorite articles" />
       <Grid container spacing={6}>
         {filteredArray.length === 0 ? (
-          <Grid item sm={12} md={12} lg={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
             <NoFavoriteArticles />
           </Grid>
         ) : (
