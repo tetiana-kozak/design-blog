@@ -22,7 +22,7 @@ const Header = (props: Props) => {
           <Menu />
           <Logo />
           <div className="main-header__actions">
-            <Search />
+            {/* <Search /> */}
             <NavLink to={'/favorites'}>
               <div className="main-header__favorite-icon">
                 <FavoriteIcon className="icon" />

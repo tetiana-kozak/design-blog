@@ -14,15 +14,15 @@ const FeaturedArticles = ({ categoryArray }: Props) => {
   return (
     <>
       <section className="intro-articles">
-        <Grid container spacing={6}>
-          <Grid item sm={12} lg={3}>
+        <Grid container spacing={4}>
+          <Grid item sm={3}>
             <FeaturedArticle categoryArrayItem={categoryArray[0]} />
             <FeaturedArticle categoryArrayItem={categoryArray[1]} />
           </Grid>
-          <Grid item sm={12} lg={6}>
+          <Grid item sm={6}>
             <FeaturedArticle categoryArrayItem={categoryArray[2]} />
           </Grid>
-          <Grid item sm={12} lg={3}>
+          <Grid item sm={3}>
             <FeaturedArticle categoryArrayItem={categoryArray[3]} />
             <FeaturedArticle categoryArrayItem={categoryArray[4]} />
           </Grid>

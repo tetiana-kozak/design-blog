@@ -1,4 +1,5 @@
 import './Categories.scss'
+import MenuIcon from '@mui/icons-material/Menu'
 
 type Props = {
   categories: string[]
@@ -12,7 +13,7 @@ const Categories = ({
   selectedCategory,
 }: Props) => {
   return (
-    <nav className="category-navigation">
+    <nav className="category-navigation scroll-inner">
       <ul className="category-list">
         {categories.map((category, i) => (
           <li
