@@ -56,6 +56,15 @@
       }
     }
   }
+
+  .single-article {
+    .article-heading {
+      .heading-title {
+        font-size: 42px;
+        line-height: 48px;
+      }
+    }
+  }
 }
 
 @media (max-width: 825px) {
@@ -125,7 +134,43 @@
   .css-honmcm-MuiGrid-root > .MuiGrid-item {
     padding-top: 48px;
   }
+  .single-article {
+    .article-heading {
+      .heading-title {
+        font-size: 35px;
+        line-height: 40px;
+      }
+
+      .heading-subtitle {
+        .date-and-author {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+    .article-body {
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .photographer {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .article-author {
+      .author-bio {
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 425px) {
   .gray-slider-section {
     padding-bottom: 40px;
@@ -157,6 +202,14 @@
     }
     .no-image {
       max-width: 200px;
+    }
+  }
+  .single-article {
+    .article-heading {
+      .heading-title {
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
   }
 }
