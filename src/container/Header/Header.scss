@@ -1,5 +1,10 @@
 .main-header {
   box-shadow: 1px 5px 5px rgba(143, 143, 143, 0.08);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 20;
 }
 
 .main-header__inner {
