@@ -17,6 +17,12 @@
   .css-1fh410u-MuiGrid-root > .MuiGrid-item.footer-social {
     padding-top: 60px;
   }
+  .favorites__card {
+    .clear-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 @media (max-width: 825px) {
@@ -77,4 +83,6 @@
       }
     }
   }
+}
+@media (max-width: 768px) {
 }
