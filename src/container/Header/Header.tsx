@@ -1,7 +1,6 @@
 import { Container } from '@mui/material'
 import Menu from 'components/Menu/Menu'
 import Logo from 'components/Logo/Logo'
-import Search from 'components/Search/Search'
 import './Header.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppSelector } from 'redux/hooks'
@@ -22,7 +21,6 @@ const Header = (props: Props) => {
           <Menu />
           <Logo />
           <div className="main-header__actions">
-            {/* <Search /> */}
             <NavLink to={'/favorites'}>
               <div className="main-header__favorite-icon">
                 <FavoriteIcon className="icon" />

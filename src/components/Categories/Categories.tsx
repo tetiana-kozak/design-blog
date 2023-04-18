@@ -1,5 +1,4 @@
 import './Categories.scss'
-import MenuIcon from '@mui/icons-material/Menu'
 
 type Props = {
   categories: string[]

@@ -1,5 +1,5 @@
 import { Card, CardContent, CardMedia } from '@mui/material'
-import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { useAppDispatch } from 'redux/hooks'
 import { Link } from 'react-router-dom'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
 import { toggleLike } from 'redux/favoritesReducer'
