@@ -169,6 +169,11 @@
       }
     }
   }
+  .single-article .article-slider {
+    .slider-slide {
+      height: 300px;
+    }
+  }
 }
 
 @media (max-width: 425px) {

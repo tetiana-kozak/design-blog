@@ -53,9 +53,13 @@ const ArticlePage = ({
           }}
           speed={1000}
           spaceBetween={16}
+          centeredSlides={true}
           loop={true}
           modules={[Pagination, Autoplay]}
           slidesPerView={1}
+          keyboard={{
+            enabled: true,
+          }}
         >
           {article.images?.map((sliderImage, i) => (
             <SwiperSlide key={i}>
