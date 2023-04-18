@@ -212,8 +212,24 @@
   .single-article {
     .article-heading {
       .heading-title {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .single-article {
+    .article-heading {
+      .heading-title {
         font-size: 25px;
         line-height: 30px;
+      }
+      .heading-subtitle {
+        .date-and-author {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
     }
   }
