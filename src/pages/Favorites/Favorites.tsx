@@ -2,9 +2,9 @@ import { Grid } from '@mui/material'
 import { useAppSelector } from 'redux/hooks'
 import ArticlesArray from 'utils/articlesArray'
 import './Favorites.scss'
-import SectionTitle from 'components/Sections/SectionTitle'
 import NoFavoriteArticles from 'components/Favorites/NoFavoriteArticles'
 import FavoriteArticle from 'components/Favorites/FavoriteArticle'
+import PageTitle from 'components/Sections/PageTitle'
 
 type Props = {}
 const Favorites = (props: Props) => {
@@ -16,7 +16,7 @@ const Favorites = (props: Props) => {
 
   return (
     <>
-      <SectionTitle sectionTitle="Favorite articles" />
+      <PageTitle>Favorite articles</PageTitle>
       <Grid container spacing={6}>
         {filteredArray.length === 0 ? (
           <Grid item xs={12} sm={12} md={12} lg={12}>

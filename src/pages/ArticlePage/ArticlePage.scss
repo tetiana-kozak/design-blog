@@ -142,18 +142,3 @@
     background: none;
   }
 }
-
-.decorative-line {
-  border-top: 2px solid #000;
-  height: 13px;
-  width: 100%;
-  margin: 10px 0 25px;
-  .center {
-    display: flex;
-    justify-content: center;
-    img {
-      position: relative;
-      top: -10px;
-    }
-  }
-}

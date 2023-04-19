@@ -1,5 +1,4 @@
 import CategoryButton from 'components/Buttons/CategoryButton'
-import imageDecor from 'assets/line-decor.svg'
 import './ArticlePage.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper'
@@ -9,6 +8,7 @@ import author from 'assets/authors/leo-lei.jpg'
 import ArticlesArray, { Article, getArticlesObject } from 'utils/articlesArray'
 import { useParams } from 'react-router-dom'
 import FavoriteButton from 'components/FavouriteButton/FavoriteButton'
+import DecorativeLine from 'components/Decor/DecorativeLine'
 
 type Props = {
   articlesObject?: {
@@ -30,11 +30,8 @@ const ArticlePage = ({
 
         <h1 className="heading-title">{article.title}</h1>
 
-        <div className="decorative-line">
-          <div className="center">
-            <img src={imageDecor} alt="" />
-          </div>
-        </div>
+        <DecorativeLine />
+
         <div className="heading-subtitle">
           <div className="date-and-author">
             {article.date} <span> By {article.author}</span>
