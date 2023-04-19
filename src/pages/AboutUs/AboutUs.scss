@@ -35,6 +35,26 @@
   }
 
   .FAQ {
+    .accordion {
+      .accordion-container {
+        box-shadow: none;
+        border-top: 1px solid #c4c4c4;
+        .summary {
+          h6 {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
+          }
+        }
+        .details {
+          p {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
   }
 
   h2 {
