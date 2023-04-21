@@ -24,3 +24,40 @@
     }
   }
 }
+
+@media (max-width: 700px) {
+  .team {
+    .team-member-card {
+      .card-description {
+        font-size: 18px;
+        .name {
+          line-height: 22px;
+        }
+        p {
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .team {
+    .team-member-card {
+      flex-direction: column;
+
+      .card-description {
+        font-size: 16px;
+        margin-left: 0;
+        .name {
+          line-height: 26px;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        p {
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

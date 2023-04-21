@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './container/App/App'
 import './reset.css'
 import './style.scss'
-import './media-style.scss'
 import { Provider } from 'react-redux'
 import { store } from 'redux/store'
 

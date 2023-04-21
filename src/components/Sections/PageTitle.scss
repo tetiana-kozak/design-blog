@@ -5,3 +5,17 @@
   font-weight: 700;
   line-height: 55px;
 }
+
+@media (max-width: 700px) {
+  .page-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

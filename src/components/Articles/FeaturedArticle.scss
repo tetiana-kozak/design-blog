@@ -58,3 +58,9 @@
   justify-content: center;
   bottom: -14px;
 }
+
+@media (max-width: 991px) {
+  .intro-articles {
+    display: none;
+  }
+}

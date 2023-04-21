@@ -24,3 +24,23 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .category-navigation {
+    overflow-x: scroll;
+
+    &.scroll-inner {
+      &::-webkit-scrollbar {
+        height: 3px;
+        background-color: #000;
+        margin-top: 3px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #fff;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+    }
+  }
+}

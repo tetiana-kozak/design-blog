@@ -14,3 +14,28 @@
   max-width: 85%;
   margin: 0 auto;
 }
+
+@media (max-width: 700px) {
+  .about-us {
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 50px 0;
+    }
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-us {
+    h2 {
+      font-size: 18px;
+      line-height: 25px;
+      margin: 40px 0;
+    }
+  }
+}

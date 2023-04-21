@@ -76,3 +76,40 @@
     filter: grayscale(100%);
   }
 }
+
+@media (max-width: 1200px) {
+  .favorites__card {
+    .favorites__img {
+      max-height: 260px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .favorites__card {
+    .clear-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .favorites__card {
+    .favorites__img {
+      max-height: 100%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .no-favorites-block {
+    .no-description {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .no-image {
+      max-width: 200px;
+    }
+  }
+}
