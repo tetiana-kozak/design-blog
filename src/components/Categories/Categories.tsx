@@ -1,33 +1,30 @@
 import { NavLink } from 'react-router-dom'
 import './Categories.scss'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { selectedCategoryState } from 'redux/selectedCategoryReducer'
 
 type Props = {
   categories: string[]
-  filterByCategory: (category: string) => void
-  selectedCategory: string
 }
 
-const Categories = ({
-  categories,
-  filterByCategory,
-  selectedCategory,
-}: Props) => {
+const Categories = ({ categories }: Props) => {
+  const categoryState = useAppSelector((state) => state.selectedCategory)
+  const dispatch = useAppDispatch()
   return (
     <nav className="category-navigation scroll-inner">
       <ul className="category-list">
         {categories.map((category, i) => (
           <NavLink to={`/blog/${category}`} key={i}>
-            <li
-              // key={i}
+            <div
               className={
-                category === selectedCategory
+                category === categoryState
                   ? 'filtered-button active'
                   : 'filtered-button'
               }
-              onClick={() => filterByCategory(category)}
+              onClick={() => dispatch(selectedCategoryState(category))}
             >
               {category}
-            </li>
+            </div>
           </NavLink>
         ))}
       </ul>

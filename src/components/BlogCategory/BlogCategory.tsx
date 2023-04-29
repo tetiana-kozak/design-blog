@@ -1,5 +1,9 @@
-type Props = { category?: string }
-const BlogCategory = ({ category }: Props) => {
-  return <div>BlogCategory component:: category={category}</div>
+import { useAppSelector } from 'redux/hooks'
+
+type Props = {}
+
+const BlogCategory = (props: Props) => {
+  const categoryState = useAppSelector((state) => state.selectedCategory)
+  return <div>BlogCategory component:: category={categoryState}</div>
 }
 export default BlogCategory

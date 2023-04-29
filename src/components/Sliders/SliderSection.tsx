@@ -42,7 +42,7 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
       >
         {categoryArray.map(({ title, category, mainImage, id }) => (
           <SwiperSlide key={id}>
-            <Link to={`/blog/${id}`}>
+            <Link to={`/blog/articles/${id}`}>
               <div className="slider-slide">
                 <img src={mainImage} alt="" className="slider-img" />
                 <div className="slider-details">

@@ -1,9 +1,7 @@
-import { useState } from 'react'
-import MainArticles from 'components/Articles/MainArticles'
 import Categories from 'components/Categories/Categories'
 import articlesArray from 'utils/articlesArray'
-import BlogCategory from 'components/BlogCategory/BlogCategory'
 import { Outlet } from 'react-router-dom'
+import { useAppSelector } from 'redux/hooks'
 
 type Props = {}
 
@@ -20,23 +18,15 @@ const Blog = (props: Props) => {
     'commercial',
   ]
 
-  const [category, setCategory] = useState('all')
-
-  const filterByCategory = (newCategory: string) => {
-    setCategory(newCategory)
-  }
+  const categoryState = useAppSelector((state) => state.selectedCategory)
 
   const filteredItems = articlesArray.filter((article) =>
-    category === 'all' ? true : article.category === category
+    categoryState === 'all' ? true : article.category === categoryState
   )
 
   return (
     <>
-      <Categories
-        categories={categories}
-        filterByCategory={filterByCategory}
-        selectedCategory={category}
-      />
+      <Categories categories={categories} />
 
       {/* <BlogCategory selectedCategory={category} /> */}
       <Outlet />
