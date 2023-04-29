@@ -12,8 +12,10 @@ const MainRoutes = (props: Props) => (
   <Routes>
     <Route path="/" element={<InnerContent />}>
       <Route index element={<Home />} />
-      <Route path="blog" element={<Blog />} />
-      <Route path="blog/:id" element={<ArticlePage />} />
+      <Route path="blog" element={<InnerContent />}>
+        <Route index element={<Blog />} />
+        <Route path=":id" element={<ArticlePage />} />
+      </Route>
       <Route path="about-us" element={<AboutUs />} />
       <Route path="favorites" element={<Favorites />} />
     </Route>
