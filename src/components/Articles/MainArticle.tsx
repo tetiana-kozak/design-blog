@@ -23,7 +23,7 @@ const MainArticle = ({
     <>
       <article className="main-article">
         <Card className="card">
-          <Link to={`/blog/${id}`}>
+          <Link to={`/blog/articles/${id}`}>
             <CardMedia
               component="img"
               width="100%"
@@ -45,7 +45,7 @@ const MainArticle = ({
                 <CategoryButton category={category} />
                 <FavoriteButton id={id} />
               </div>
-              <Link to={`/blog/${id}`}>
+              <Link to={`/blog/articles/${id}`}>
                 <h2 className="title">{title}</h2>
                 <p className="description"> {description}</p>
               </Link>

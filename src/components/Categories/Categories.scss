@@ -3,6 +3,8 @@
   .category-list {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 15;
     .filtered-button {
       text-transform: capitalize;
       padding: 8px 15px;
@@ -18,7 +20,6 @@
     }
     .active {
       text-transform: capitalize;
-      padding: 8px 15px;
       z-index: 10;
       background-color: rgba(203, 203, 203, 0.259);
     }

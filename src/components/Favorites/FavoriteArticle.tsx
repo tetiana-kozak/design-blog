@@ -15,7 +15,7 @@ const FavoriteArticle = ({ id, mainImage, title, description }: Props) => {
   const dispatch = useAppDispatch()
   return (
     <Card className="favorites__card">
-      <Link to={`/blog/${id}`}>
+      <Link to={`/blog/articles/${id}`}>
         <CardMedia
           component="img"
           image={mainImage}

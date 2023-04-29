@@ -16,7 +16,7 @@ const FeaturedArticle = ({ categoryArrayItem }: Props) => {
   return (
     <>
       <article className="intro-article" key={categoryArrayItem.id}>
-        <Link to={`/blog/${categoryArrayItem.id}`}>
+        <Link to={`/blog/articles/${categoryArrayItem.id}`}>
           <Card className="card featured-card">
             <CardActionArea>
               <div className="card-media card-relative">
