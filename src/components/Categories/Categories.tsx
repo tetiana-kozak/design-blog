@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './Categories.scss'
 
 type Props = {
@@ -15,17 +16,19 @@ const Categories = ({
     <nav className="category-navigation scroll-inner">
       <ul className="category-list">
         {categories.map((category, i) => (
-          <li
-            key={i}
-            className={
-              category === selectedCategory
-                ? 'filtered-button active'
-                : 'filtered-button'
-            }
-            onClick={() => filterByCategory(category)}
-          >
-            {category}
-          </li>
+          <NavLink to={`/blog/${category}`} key={i}>
+            <li
+              // key={i}
+              className={
+                category === selectedCategory
+                  ? 'filtered-button active'
+                  : 'filtered-button'
+              }
+              onClick={() => filterByCategory(category)}
+            >
+              {category}
+            </li>
+          </NavLink>
         ))}
       </ul>
     </nav>

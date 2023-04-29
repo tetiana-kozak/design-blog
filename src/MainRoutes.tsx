@@ -15,7 +15,7 @@ const MainRoutes = (props: Props) => (
       <Route index element={<Home />} />
       <Route path="blog" element={<Blog />}>
         {/* <Route index element={<Blog />} /> */}
-        <Route path="category" element={<BlogCategory category="category" />} />
+        <Route path=":category" element={<BlogCategory />} />
       </Route>
       <Route path="blog/:id" element={<ArticlePage />} />
       <Route path="about-us" element={<AboutUs />} />
