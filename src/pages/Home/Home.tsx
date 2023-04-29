@@ -3,7 +3,6 @@ import MainArticles from 'components/Articles/MainArticles'
 import SliderSection from 'components/Sliders/SliderSection'
 import articlesArray from 'utils/articlesArray'
 import './Home.scss'
-import { Outlet } from 'react-router-dom'
 
 type Props = {}
 const Home = (props: Props) => {

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import MainArticles from 'components/Articles/MainArticles'
 import Categories from 'components/Categories/Categories'
 import articlesArray from 'utils/articlesArray'
-import { Outlet } from 'react-router-dom'
 
 type Props = {}
 
