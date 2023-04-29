@@ -2,6 +2,8 @@ import { useState } from 'react'
 import MainArticles from 'components/Articles/MainArticles'
 import Categories from 'components/Categories/Categories'
 import articlesArray from 'utils/articlesArray'
+import BlogCategory from 'components/BlogCategory/BlogCategory'
+import { Outlet } from 'react-router-dom'
 
 type Props = {}
 
@@ -36,7 +38,10 @@ const Blog = (props: Props) => {
         selectedCategory={category}
       />
 
-      <MainArticles categoryArray={filteredItems} />
+      {/* <BlogCategory selectedCategory={category} /> */}
+      <Outlet />
+
+      {/* <MainArticles categoryArray={filteredItems} /> */}
     </>
   )
 }

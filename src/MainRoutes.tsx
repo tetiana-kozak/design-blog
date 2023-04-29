@@ -1,3 +1,4 @@
+import BlogCategory from 'components/BlogCategory/BlogCategory'
 import InnerContent from 'components/InnerContent/InnerContent'
 import AboutUs from 'pages/AboutUs/AboutUs'
 import ArticlePage from 'pages/ArticlePage/ArticlePage'
@@ -12,10 +13,11 @@ const MainRoutes = (props: Props) => (
   <Routes>
     <Route path="/" element={<InnerContent />}>
       <Route index element={<Home />} />
-      <Route path="blog" element={<InnerContent />}>
-        <Route index element={<Blog />} />
-        <Route path=":id" element={<ArticlePage />} />
+      <Route path="blog" element={<Blog />}>
+        {/* <Route index element={<Blog />} /> */}
+        <Route path="category" element={<BlogCategory category="category" />} />
       </Route>
+      <Route path="blog/:id" element={<ArticlePage />} />
       <Route path="about-us" element={<AboutUs />} />
       <Route path="favorites" element={<Favorites />} />
     </Route>
