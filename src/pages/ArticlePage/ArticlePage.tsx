@@ -26,7 +26,7 @@ const ArticlePage = ({
   return (
     <div className="single-article">
       <section className="article-heading">
-        <CategoryButton category="travel" />
+        <CategoryButton category={article.category} />
 
         <h1 className="heading-title">{article.title}</h1>
 

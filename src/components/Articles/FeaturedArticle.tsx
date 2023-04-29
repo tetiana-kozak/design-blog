@@ -16,26 +16,28 @@ const FeaturedArticle = ({ categoryArrayItem }: Props) => {
   return (
     <>
       <article className="intro-article" key={categoryArrayItem.id}>
-        <Link to={`/blog/articles/${categoryArrayItem.id}`}>
-          <Card className="card featured-card">
-            <CardActionArea>
-              <div className="card-media card-relative">
+        <Card className="card featured-card">
+          <CardActionArea>
+            <div className="card-media card-relative">
+              <Link to={`/blog/articles/${categoryArrayItem.id}`}>
                 <img
                   src={categoryArrayItem.mainImage}
                   alt=""
                   className="card-img"
                 />
-                <div className="button-center">
-                  <CategoryButton category={categoryArrayItem.category} />
-                </div>
+              </Link>
+              <div className="button-center">
+                <CategoryButton category={categoryArrayItem.category} />
               </div>
+            </div>
+            <Link to={`/blog/articles/${categoryArrayItem.id}`}>
               <CardContent className="card-content-featured">
                 <h3>{categoryArrayItem.title}</h3>
                 <p> {categoryArrayItem.description}</p>
               </CardContent>
-            </CardActionArea>
-          </Card>
-        </Link>
+            </Link>
+          </CardActionArea>
+        </Card>
       </article>
     </>
   )
