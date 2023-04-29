@@ -3,11 +3,20 @@ import './Categories.scss'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { selectedCategoryState } from 'redux/selectedCategoryReducer'
 
-type Props = {
-  categories: string[]
-}
+type Props = {}
 
-const Categories = ({ categories }: Props) => {
+const Categories = (props: Props) => {
+  const categories = [
+    'all',
+    'art',
+    'home furnishing',
+    'interrior design',
+    'featured',
+    'technology',
+    'architecture',
+    'travel',
+    'commercial',
+  ]
   const categoryState = useAppSelector((state) => state.selectedCategory)
   const dispatch = useAppDispatch()
   return (
