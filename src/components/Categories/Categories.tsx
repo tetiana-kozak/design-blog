@@ -23,7 +23,7 @@ const Categories = (props: Props) => {
     <nav className="category-navigation scroll-inner">
       <ul className="category-list">
         {categories.map((category, i) => (
-          <NavLink to={`/blog/${category}`} key={i}>
+          <NavLink to={`/blog/${category.replace(' ', '-')}`} key={i}>
             <div
               className={
                 category === categoryState
