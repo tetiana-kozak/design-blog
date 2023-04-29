@@ -4,6 +4,7 @@ import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
 import SectionTitle from 'components/Sections/SectionTitle'
 import './SliderSection.scss'
+import { Link } from 'react-router-dom'
 
 type Props = {
   categoryArray: {
@@ -41,13 +42,15 @@ const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
       >
         {categoryArray.map(({ title, category, mainImage, id }) => (
           <SwiperSlide key={id}>
-            <a className="slider-slide" href="#">
-              <img src={mainImage} alt="" className="slider-img" />
-              <div className="slider-details">
-                <h5>{category}</h5>
-                <h4>{title}</h4>
+            <Link to={`/blog/${id}`}>
+              <div className="slider-slide">
+                <img src={mainImage} alt="" className="slider-img" />
+                <div className="slider-details">
+                  <h5>{category}</h5>
+                  <h4>{title}</h4>
+                </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
