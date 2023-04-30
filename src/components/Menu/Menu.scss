@@ -1,6 +1,25 @@
-.menu {
+.header-menu {
+  width: 15%;
   .menu-list {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-menu {
+    width: 25%;
+  }
+}
+
+@media (max-width: 620px) {
+  .header-menu {
+    width: 35%;
+  }
+}
+
+@media (max-width: 560px) {
+  .header-menu {
+    width: 70%;
   }
 }

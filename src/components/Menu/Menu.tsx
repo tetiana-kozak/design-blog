@@ -4,7 +4,7 @@ import './Menu.scss'
 type Props = {}
 const Menu = (props: Props) => {
   return (
-    <nav className="menu">
+    <nav className="header-menu">
       <ul className="menu-list">
         <MenuItem to="/blog">Blog</MenuItem>
         <MenuItem to="/about-us">About Us</MenuItem>
