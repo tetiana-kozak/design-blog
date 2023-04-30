@@ -13,8 +13,9 @@ const CategoryButton = ({ category }: Props) => {
     <NavLink
       to={`/blog/${category.replace(' ', '-')}`}
       onClick={() => dispatch(selectedCategoryState(category))}
+      className="category-button"
     >
-      <span className="category-button">{category}</span>
+      <span>{category}</span>
     </NavLink>
   )
 }
