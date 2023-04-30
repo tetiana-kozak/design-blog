@@ -200,7 +200,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .single-article {
     .article-heading {
       .heading-title {
@@ -210,7 +210,10 @@
       .heading-subtitle {
         .date-and-author {
           font-size: 14px;
-          line-height: 16px;
+          line-height: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
     }
