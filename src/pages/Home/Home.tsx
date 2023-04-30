@@ -6,16 +6,13 @@ import './Home.scss'
 
 type Props = {}
 const Home = (props: Props) => {
-  const lastLaunchesArray = articlesArray.filter(
-    (article) => article.heading === 'last launches'
-  )
-  const featuredArray = articlesArray.filter(
-    (article) => article.heading === 'featured'
-  )
-  const popularArray = articlesArray.filter(
-    (article) => article.heading === 'popular'
-  )
-  const regularArray = articlesArray.filter((article) => article.heading === '')
+  const filterArticlesArray = (heading: string) => {
+    return articlesArray.filter((article) => article.heading === heading)
+  }
+  const lastLaunchesArray = filterArticlesArray('last launches')
+  const featuredArray = filterArticlesArray('featured')
+  const popularArray = filterArticlesArray('popular')
+  const regularArray = filterArticlesArray('')
 
   return (
     <div className="home-page">
