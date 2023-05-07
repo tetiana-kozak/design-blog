@@ -15,7 +15,7 @@ type Props = {
 const FeaturedArticle = ({ categoryArrayItem }: Props) => {
   return (
     <>
-      <article className="intro-article" key={categoryArrayItem.id}>
+      <article className="intro-article">
         <Card className="card featured-card">
           <CardActionArea>
             <div className="card-media card-relative">

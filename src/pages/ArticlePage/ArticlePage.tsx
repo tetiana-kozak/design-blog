@@ -5,19 +5,21 @@ import { Autoplay, Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
 import author from 'assets/authors/leo-lei.jpg'
-import ArticlesArray, { Article, getArticlesObject } from 'utils/articlesArray'
 import { useParams } from 'react-router-dom'
 import FavoriteButton from 'components/FavouriteButton/FavoriteButton'
 import DecorativeLine from 'components/Decor/DecorativeLine'
+import { Article, getArticlesObject } from 'redux/articlesReducer'
 
 type Props = {
   articlesObject?: {
     [id: number]: Article
   }
+  articlesArray: Article[]
 }
 
 const ArticlePage = ({
-  articlesObject = getArticlesObject(ArticlesArray),
+  articlesArray,
+  articlesObject = getArticlesObject(articlesArray),
 }: Props) => {
   const { id } = useParams()
 

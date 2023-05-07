@@ -1,6 +1,5 @@
 import { Grid } from '@mui/material'
 import { useAppSelector } from 'redux/hooks'
-import ArticlesArray from 'utils/articlesArray'
 import './Favorites.scss'
 import NoFavoriteArticles from 'components/Favorites/NoFavoriteArticles'
 import FavoriteArticle from 'components/Favorites/FavoriteArticle'
@@ -8,9 +7,10 @@ import PageTitle from 'components/Sections/PageTitle'
 
 type Props = {}
 const Favorites = (props: Props) => {
+  const articlesArray = useAppSelector((state) => state.fetchedArticles)
   const favoritesState = useAppSelector((state) => state.favoriteArticles)
 
-  const filteredArray = ArticlesArray.filter(
+  const filteredArray = articlesArray.filter(
     (article) => favoritesState[article.id]
   )
 

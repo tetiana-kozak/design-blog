@@ -7,14 +7,13 @@ import Favorites from 'pages/Favorites/Favorites'
 import Home from 'pages/Home/Home'
 import { Routes, Route } from 'react-router-dom'
 import { useAppSelector } from 'redux/hooks'
-import ArticlesArray from 'utils/articlesArray'
 
 type Props = {}
 
 const MainRoutes = (props: Props) => {
+  const articlesArray = useAppSelector((state) => state.fetchedArticles)
   const categoryState = useAppSelector((state) => state.selectedCategory)
-
-  const filteredItems = ArticlesArray.filter((article) =>
+  const filteredItems = articlesArray.filter((article) =>
     categoryState === 'all' ? true : article.category === categoryState
   )
   return (
@@ -31,7 +30,10 @@ const MainRoutes = (props: Props) => {
             element={<MainArticles categoryArray={filteredItems} />}
           />
         </Route>
-        <Route path="blog/articles/:id" element={<ArticlePage />} />
+        <Route
+          path="blog/articles/:id"
+          element={<ArticlePage articlesArray={articlesArray} />}
+        />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="favorites" element={<Favorites />} />
       </Route>
