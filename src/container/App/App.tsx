@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 import Footer from 'container/Footer/Footer'
 import './App.scss'
 import MainRoutes from 'MainRoutes'
-import { useAppDispatch } from 'redux/hooks'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { useEffect } from 'react'
 import { fetchArticles } from 'redux/articlesReducer'
 
@@ -15,6 +15,18 @@ const App = (props: Props) => {
   useEffect(() => {
     dispatch(fetchArticles())
   }, [dispatch])
+
+  const favoritesState = useAppSelector((state) => state.favoriteArticles)
+
+  const selectedFavoritesArray = Object.entries(favoritesState).filter(
+    ([key, value]) => value === true
+  )
+  const selectedFavoritesObject = Object.fromEntries(selectedFavoritesArray)
+
+  localStorage.setItem(
+    'favoriteArticles',
+    JSON.stringify(selectedFavoritesObject)
+  )
 
   return (
     <StyledEngineProvider injectFirst>

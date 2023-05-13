@@ -4,7 +4,8 @@ type FavoriteArticlesType = {
   [id: number]: boolean
 }
 
-export const initialState: FavoriteArticlesType = {}
+export const initialState: FavoriteArticlesType =
+  JSON.parse(localStorage.getItem('favoriteArticles')!) || {}
 
 export const favoritesSlice = createSlice({
   name: 'favorites',
