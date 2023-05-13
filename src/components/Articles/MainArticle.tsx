@@ -20,40 +20,38 @@ const MainArticle = ({
   id,
 }: Props) => {
   return (
-    <>
-      <article className="main-article" data-aos="fade-up">
-        <Card className="card">
-          <Link to={`/blog/articles/${id}`}>
-            <CardMedia
-              component="img"
-              width="100%"
-              src={mainImage}
-              className="card-img"
-            />
-          </Link>
-          <CardContent
-            className="card-content"
-            sx={{
+    <article className="main-article" data-aos="fade-up">
+      <Card className="card">
+        <Link to={`/blog/articles/${id}`}>
+          <CardMedia
+            component="img"
+            width="100%"
+            src={mainImage}
+            className="card-img"
+          />
+        </Link>
+        <CardContent
+          className="card-content"
+          sx={{
+            padding: '0px',
+            '&:last-child': {
               padding: '0px',
-              '&:last-child': {
-                padding: '0px',
-              },
-            }}
-          >
-            <div className="card-content-inner">
-              <div className="card-content-actions">
-                <CategoryButton category={category} />
-                <FavoriteButton id={id} />
-              </div>
-              <Link to={`/blog/articles/${id}`}>
-                <h2 className="title">{title}</h2>
-                <p className="description"> {description}</p>
-              </Link>
+            },
+          }}
+        >
+          <div className="card-content-inner">
+            <div className="card-content-actions">
+              <CategoryButton category={category} />
+              <FavoriteButton id={id} />
             </div>
-          </CardContent>
-        </Card>
-      </article>
-    </>
+            <Link to={`/blog/articles/${id}`}>
+              <h2 className="title">{title}</h2>
+              <p className="description"> {description}</p>
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
+    </article>
   )
 }
 export default MainArticle

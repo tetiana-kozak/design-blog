@@ -13,16 +13,16 @@ import 'aos/dist/aos.css'
 
 type Props = {}
 const App = (props: Props) => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(fetchArticles())
     dispatch(fetchTeam())
   }, [dispatch])
-
-  useEffect(() => {
-    AOS.init()
-  }, [])
 
   const favoritesState = useAppSelector((state) => state.favoriteArticles)
 
