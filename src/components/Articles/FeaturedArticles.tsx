@@ -13,7 +13,7 @@ type Props = {
 const FeaturedArticles = ({ categoryArray }: Props) => {
   return (
     <>
-      <section className="intro-articles">
+      <section className="intro-articles" data-aos="fade-up">
         <Grid container spacing={4}>
           <Grid item sm={3}>
             <FeaturedArticle categoryArrayItem={categoryArray[0]} />

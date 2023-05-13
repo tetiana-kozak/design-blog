@@ -19,7 +19,7 @@ type Props = {
 
 const SliderSection = ({ categoryArray, sectionTitle }: Props) => {
   return (
-    <section className="gray-slider-section slider">
+    <section className="gray-slider-section slider" data-aos="fade-up">
       <SectionTitle sectionTitle={sectionTitle} />
 
       <Swiper

@@ -14,7 +14,7 @@ type Props = {
 const FavoriteArticle = ({ id, mainImage, title, description }: Props) => {
   const dispatch = useAppDispatch()
   return (
-    <Card className="favorites__card">
+    <Card className="favorites__card" data-aos="fade-up">
       <Link to={`/blog/articles/${id}`}>
         <CardMedia
           component="img"

@@ -16,6 +16,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-redux": "^7.1.25",
+    "aos": "^2.3.4",
     "axios": "^1.4.0",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "prettier": "2.8.3"
   }
 }

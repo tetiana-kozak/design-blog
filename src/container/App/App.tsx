@@ -8,6 +8,8 @@ import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { useEffect } from 'react'
 import { fetchArticles } from 'redux/articlesReducer'
 import { fetchTeam } from 'redux/teamReducer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 type Props = {}
 const App = (props: Props) => {
@@ -17,6 +19,10 @@ const App = (props: Props) => {
     dispatch(fetchArticles())
     dispatch(fetchTeam())
   }, [dispatch])
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   const favoritesState = useAppSelector((state) => state.favoriteArticles)
 

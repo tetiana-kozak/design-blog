@@ -21,7 +21,7 @@ const MainArticle = ({
 }: Props) => {
   return (
     <>
-      <article className="main-article">
+      <article className="main-article" data-aos="fade-up">
         <Card className="card">
           <Link to={`/blog/articles/${id}`}>
             <CardMedia
