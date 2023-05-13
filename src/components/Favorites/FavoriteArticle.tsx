@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia } from '@mui/material'
+import { Card, CardContent, CardMedia, Tooltip, Zoom } from '@mui/material'
 import { useAppDispatch } from 'redux/hooks'
 import { Link } from 'react-router-dom'
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
@@ -27,9 +27,15 @@ const FavoriteArticle = ({ id, mainImage, title, description }: Props) => {
           <div className="favorites__description">{description}</div>
         </CardContent>
       </Link>
-      <div className="clear-icon" onClick={() => dispatch(toggleLike(id))}>
-        <DeleteForeverIcon className="icon" /> <span>remove</span>
-      </div>
+      <Tooltip
+        title={<div className="tooltip">Remove from favorites</div>}
+        arrow
+        TransitionComponent={Zoom}
+      >
+        <div className="clear-icon" onClick={() => dispatch(toggleLike(id))}>
+          <DeleteForeverIcon className="icon" /> <span>remove</span>
+        </div>
+      </Tooltip>
     </Card>
   )
 }

@@ -1,10 +1,11 @@
-import { Container } from '@mui/material'
+import { Container, Tooltip, Typography } from '@mui/material'
 import Menu from 'components/Menu/Menu'
 import Logo from 'components/Logo/Logo'
 import './Header.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppSelector } from 'redux/hooks'
 import { NavLink } from 'react-router-dom'
+import Zoom from '@mui/material/Zoom'
 
 type Props = {}
 const Header = (props: Props) => {
@@ -22,10 +23,16 @@ const Header = (props: Props) => {
           <Logo />
           <div className="main-header__actions">
             <NavLink to={'/favorites'}>
-              <div className="main-header__favorite-icon">
-                <FavoriteIcon className="icon" />
-                <span className="counter">{favoriteArticlesCount}</span>
-              </div>
+              <Tooltip
+                title={<div className="tooltip">Favorites</div>}
+                arrow
+                TransitionComponent={Zoom}
+              >
+                <div className="main-header__favorite-icon">
+                  <FavoriteIcon className="icon" />
+                  <span className="counter">{favoriteArticlesCount}</span>
+                </div>
+              </Tooltip>
             </NavLink>
           </div>
         </div>
