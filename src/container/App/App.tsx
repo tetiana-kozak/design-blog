@@ -7,6 +7,7 @@ import MainRoutes from 'MainRoutes'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { useEffect } from 'react'
 import { fetchArticles } from 'redux/articlesReducer'
+import { fetchTeam } from 'redux/teamReducer'
 
 type Props = {}
 const App = (props: Props) => {
@@ -14,6 +15,7 @@ const App = (props: Props) => {
 
   useEffect(() => {
     dispatch(fetchArticles())
+    dispatch(fetchTeam())
   }, [dispatch])
 
   const favoritesState = useAppSelector((state) => state.favoriteArticles)

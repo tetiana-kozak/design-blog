@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/css/pagination'
-import author from 'assets/authors/leo-lei.jpg'
 import { useParams } from 'react-router-dom'
 import FavoriteButton from 'components/FavouriteButton/FavoriteButton'
 import DecorativeLine from 'components/Decor/DecorativeLine'
 import { Article, getArticlesObject } from 'redux/articlesReducer'
+import { useAppSelector } from 'redux/hooks'
 
 type Props = {
   articlesObject?: {
@@ -21,10 +21,10 @@ const ArticlePage = ({
   articlesArray,
   articlesObject = getArticlesObject(articlesArray),
 }: Props) => {
+  const teamArray = useAppSelector((state) => state.fetchedTeam)
+
   const { id } = useParams()
-
   const article = articlesObject[parseInt(id!)]
-
   return (
     <div className="single-article">
       <section className="article-heading">
@@ -82,17 +82,19 @@ const ArticlePage = ({
           Photos by <span> {article.photographer} </span>
         </div>
       </section>
-      <section className="article-author">
-        <img src={author} alt="" className="author-photo" />
 
-        <div className="author-bio">
-          <p>
-            Leo Lei translates his passion for minimalism into his daily-updated
-            blog Leibal. In addition, you can find uniquely designed minimalist
-            objects and furniture at the Leibal Store.
-          </p>
-        </div>
-      </section>
+      {teamArray.map(
+        (teamMember, i) =>
+          teamMember.name === article.author && (
+            <section className="article-author" key={i}>
+              <img src={teamMember.photo} alt="" className="author-photo" />
+
+              <div className="author-bio">
+                <p>{teamMember.description}</p>
+              </div>
+            </section>
+          )
+      )}
     </div>
   )
 }
