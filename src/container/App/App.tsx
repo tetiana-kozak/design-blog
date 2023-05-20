@@ -10,12 +10,15 @@ import { fetchArticles } from 'redux/articlesReducer'
 import { fetchTeam } from 'redux/teamReducer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Loader from 'components/Loader/Loader'
 
 type Props = {}
 const App = (props: Props) => {
   useEffect(() => {
     AOS.init()
   }, [])
+
+  const isDataFetched = useAppSelector((state) => state.fetchedArticles)
 
   const dispatch = useAppDispatch()
 
@@ -41,7 +44,7 @@ const App = (props: Props) => {
       <Header />
       <main className="main">
         <Container>
-          <MainRoutes />
+          {!isDataFetched.length ? <Loader /> : <MainRoutes />}
         </Container>
       </main>
       <Footer />
