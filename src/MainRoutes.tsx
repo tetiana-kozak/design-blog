@@ -5,7 +5,8 @@ import ArticlePage from 'pages/ArticlePage/ArticlePage'
 import Blog from 'pages/Blog/Blog'
 import Favorites from 'pages/Favorites/Favorites'
 import Home from 'pages/Home/Home'
-import { Routes, Route } from 'react-router-dom'
+import PageNotFound from 'pages/PageNotFound/PageNotFound'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAppSelector } from 'redux/hooks'
 
 type Props = {}
@@ -36,6 +37,8 @@ const MainRoutes = (props: Props) => {
         />
         <Route path="about-us" element={<AboutUs />} />
         <Route path="favorites" element={<Favorites />} />
+        <Route path="page-not-found" element={<PageNotFound />} />
+        <Route path="*" element={<Navigate to="page-not-found" />} />
       </Route>
     </Routes>
   )
