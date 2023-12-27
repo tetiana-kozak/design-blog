@@ -14,7 +14,7 @@ export const fetchTeam = createAsyncThunk<Team[], undefined>(
   'team/fetchTeam',
   async () =>
     await axios
-      .get('https://run.mocky.io/v3/96433b00-81f5-40cc-9bb6-f166d4e0c2dd')
+      .get('https://run.mocky.io/v3/aa3fa3b7-e30e-4f6b-b843-bed81aaaa241')
       .then((response) => response.data.team)
       .catch((error) => console.log('team error: ', error))
 )
