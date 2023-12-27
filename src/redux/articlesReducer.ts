@@ -21,7 +21,7 @@ export const fetchArticles = createAsyncThunk<Article[], undefined>(
   'articles/fetchArticles',
   async () =>
     await axios
-      .get('https://run.mocky.io/v3/96433b00-81f5-40cc-9bb6-f166d4e0c2dd')
+      .get('https://run.mocky.io/v3/58154f7a-c03a-41f4-a8a1-6b38956cf38d')
       .then((response) => response.data.articles)
       .catch((error) => console.log('articles error: ', error))
 )
